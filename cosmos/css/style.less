@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+@maincolor: #172b4e;
+@border: rgb(180, 180, 180);
+
+body {
+    height: 100vh;
+    font-size: 10px;
+}
+
+.main {
+    height: 100%;
+    background: #fff url(../image/mainbg.jpg) center center no-repeat;
+}
+.container {
+    padding: 2rem 2rem 7rem 2rem;
+    background-color: rgba(255, 255, 255, 0.952);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    &-logo {
+        display: flex;
+        align-items: center;
+        p {
+            font-family: Raleway;
+            margin-left: 25px;
+            font-size: 18px;
+            letter-spacing: 0.7em;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    }
+    &-phone a {
+        font-size: 18px;
+        color: @maincolor;
+        text-decoration: none;
+    }
+}
+.button {
+    background-color: @maincolor;
+    color: #fff;
+    box-shadow: none;
+    font-family: Raleway;
+    &:hover {
+        color: rgb(207, 207, 207);
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &:active {
+        color: rgba(207, 207, 207, 0.692);
+    }
+}
+.secrow {
+    margin-top: 120px;
+}
+.firstform {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem 3rem;
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    &-label {
+        margin-top: 12px;
+        padding: 0 2px;
+        font-size: 11px;
+        background-color: #fff;
+        display: inline-block;
+        transform: translateY(15px);
+    }
+    &-input {
+        border: 1px solid @border;
+        border-radius: 3px;
+        font-size: 18px;
+        padding: 0.6rem;
+        width: 100%;
+        display: block;
+    }
+    &-button {
+        width: 60%;
+        margin-top: 23px;
+    }
+}
