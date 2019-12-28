@@ -13,7 +13,7 @@
   src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPBQ.ttf) format('truetype');
 }
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-size: 10px;
 }
 .main {
@@ -33,6 +33,7 @@ body {
   align-items: center;
 }
 .header-logo p {
+  display: inline-block;
   font-family: Raleway;
   margin-left: 25px;
   font-size: 18px;
@@ -40,13 +41,16 @@ body {
   margin-bottom: 0;
   text-transform: uppercase;
 }
-.header a {
+.header-phone {
+  display: inline-block;
+}
+.header-phone a {
   font-size: 18px;
   color: #000;
   text-decoration: none;
 }
-.header a::before,
-.header a::after {
+.header-phone a::before,
+.header-phone a::after {
   content: '';
   display: block;
   width: 100%;
@@ -55,14 +59,14 @@ body {
   background-color: #000;
   transition: 0.3s;
 }
-.header a::before {
+.header-phone a::before {
   transform-origin: 100%;
 }
-.header a::after {
+.header-phone a::after {
   transform-origin: 0%;
 }
-.header a:hover::before,
-.header a:hover::after {
+.header-phone a:hover::before,
+.header-phone a:hover::after {
   transform: scaleX(1);
 }
 .button {
@@ -82,6 +86,9 @@ body {
 }
 .secrow {
   margin-top: 120px;
+}
+.videodiv {
+  margin-bottom: 30px;
 }
 .firstform {
   background: #fff;
