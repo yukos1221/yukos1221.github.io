@@ -13,20 +13,23 @@
   src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPBQ.ttf) format('truetype');
 }
 body {
-  min-height: 100vh;
+  font-family: Raleway;
+  height: 100vh;
   font-size: 10px;
-}
-.main {
   height: 100%;
-  background: #fff url(../image/mainbg.jpg) center center no-repeat;
+  background: #fff url(../image/mainbg.jpg) center repeat;
 }
 .container {
-  padding: 2rem 2rem 7rem 2rem;
+  padding: 2rem 2rem;
   background-color: rgba(255, 255, 255, 0.952);
 }
 .header {
   display: flex;
   align-items: center;
+}
+.header .imglogo {
+  max-width: 130px;
+  width: 100%;
 }
 .header-logo {
   display: flex;
@@ -85,9 +88,16 @@ body {
   color: rgba(207, 207, 207, 0.692);
 }
 .secrow {
-  margin-top: 120px;
+  margin-top: 50px;
 }
-.videodiv {
+.secrow .videodiv {
+  margin-bottom: 30px;
+}
+.secrow .videodiv .video-small {
+  display: none;
+}
+.secrow h1 {
+  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 .firstform {
@@ -120,4 +130,26 @@ body {
 .firstform-button {
   width: 60%;
   margin-top: 23px;
+}
+.space-slider .item h3 {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.space-slider .item .imgcontainer img {
+  width: 100%;
+  height: auto;
+}
+.space-slider .item .textcontainer {
+  padding: 5px 10px;
+}
+.space-slider .item .textcontainer p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.4;
+}
+@media screen and (max-width: 991px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
 }

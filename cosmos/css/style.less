@@ -3,22 +3,24 @@
 @border: rgb(180, 180, 180);
 
 body {
-    min-height: 100vh;
+    font-family: Raleway;
+    height: 100vh;
     font-size: 10px;
-}
-
-.main {
     height: 100%;
-    background: #fff url(../image/mainbg.jpg) center center no-repeat;
+    background: #fff url(../image/mainbg.jpg) center repeat;
 }
 .container {
-    padding: 2rem 2rem 7rem 2rem;
+    padding: 2rem 2rem;
     background-color: rgba(255, 255, 255, 0.952);
 }
 
 .header {
     display: flex;
     align-items: center;
+    .imglogo {
+        max-width: 130px;
+        width: 100%;
+    }
     &-logo {
         display: flex;
         align-items: center;
@@ -75,11 +77,19 @@ body {
         color: rgba(207, 207, 207, 0.692);
     }
 }
+
 .secrow {
-    margin-top: 120px;
-}
-.videodiv {
-    margin-bottom: 30px;
+    margin-top: 50px;
+    .videodiv {
+        margin-bottom: 30px;
+        .video-small {
+            display:none;
+        }
+    }
+    h1 {
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
 }
 .firstform {
     background: #fff;
@@ -110,5 +120,35 @@ body {
     &-button {
         width: 60%;
         margin-top: 23px;
+    }
+}
+
+.space-slider {
+    .item {
+        h3 {
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+        .imgcontainer {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .textcontainer {
+            padding: 5px 10px;
+            p {
+                font-size: 16px;
+                text-align: justify;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        height: auto;
+        min-height: 100vh;
     }
 }
