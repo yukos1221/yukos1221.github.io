@@ -112,7 +112,7 @@ body {
 .firstform {
     background: #fff;
     border: 1px solid #000;
-    width: 25%;
+    width: 400px;
     margin: 0 auto;
     border-radius: 8px;
     text-align: center;
@@ -194,20 +194,31 @@ body {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) and (min-width: 992px) {
     #videomilky {
         width: 784px;
         height: 441px;
     }
+    .header-phone {
+        position: relative;
+        left: 60px;
+    }
 }
 
-@media screen and (max-width: 991px) {
-    body {
-        height: auto;
-        min-height: 100vh;
-    }
+@media screen and (max-width: 991px) and (min-width: 768px) {
     #videomilky {
         width: 560px;
         height: 315px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #videomilky {
+        width: 480px;
+        height: 270px;
+    }
+    .header-phone, .roflbtn {
+        position: relative;
+        left: 40px;
     }
 }
