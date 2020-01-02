@@ -48,6 +48,7 @@ body {
   display: inline-block;
 }
 .header-phone a {
+  font-family: Arial;
   font-size: 18px;
   color: #000;
   text-decoration: none;
@@ -88,21 +89,37 @@ body {
   color: rgba(207, 207, 207, 0.692);
 }
 .secrow {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .secrow .videodiv {
-  margin-bottom: 30px;
-}
-.secrow .videodiv .video-small {
-  display: none;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px dotted black;
 }
 .secrow h1 {
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
+#videomilky {
+  width: 1000px;
+  height: 563px;
+}
+.orderbtn {
+  margin-top: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0 auto;
+  font-size: 19px;
+  width: 130px;
+  height: 50px;
+}
 .firstform {
   background: #fff;
   border: 1px solid #000;
+  width: 25%;
+  margin: 0 auto;
   border-radius: 8px;
   text-align: center;
   padding: 2rem 3rem;
@@ -131,6 +148,9 @@ body {
   width: 60%;
   margin-top: 23px;
 }
+.space-slider {
+  margin-top: 100px;
+}
 .space-slider .item h3 {
   text-align: center;
   letter-spacing: 0.1em;
@@ -147,9 +167,46 @@ body {
   text-align: justify;
   line-height: 1.4;
 }
+.slick-active:focus {
+  outline: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  z-index: 99;
+}
+.prev-arrow {
+  left: -38px;
+  background: url(../image/button-left.png) center no-repeat;
+  background-size: 100%;
+}
+.prev-arrow:focus {
+  outline: none;
+}
+.next-arrow {
+  right: -38px;
+  background: url(../image/button-rigth.png) center no-repeat;
+  background-size: 100%;
+}
+.next-arrow:focus {
+  outline: none;
+}
+@media screen and (max-width: 1200px) {
+  #videomilky {
+    width: 784px;
+    height: 441px;
+  }
+}
 @media screen and (max-width: 991px) {
   body {
     height: auto;
     min-height: 100vh;
+  }
+  #videomilky {
+    width: 560px;
+    height: 315px;
   }
 }

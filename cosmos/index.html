@@ -9,6 +9,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -42,14 +45,17 @@
             Galaxies are a trend!
           </h1>
         </div>
-
-        <div class="col-md-12 col-lg-6 text-center">
-          <div class="videodiv">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xwSQVSlccCg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        <div class="videodiv">
+          <iframe id="videomilky" src="https://www.youtube.com/embed/xwSQVSlccCg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-2 offset-xl-1 firstform">
+      
+      </div>
+      <div class="row">
+        <button href="#test-popup" class="button btn orderbtn open-popup">Order me</button>
+        
+        <!--popup form -->
+        <div id="test-popup" class="white-popup mfp-hide firstform">
           <h2>
             Order the galaxy <br> to your home now!
           </h2>
@@ -66,7 +72,7 @@
 
     <div class="section">
       <div class="container">
-        <div class="col-md-8 offset-md-2">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
           <div class="space-slider">
             <div class="item">
               <h3>Messier 82</h3>
@@ -106,9 +112,8 @@
     </div>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
