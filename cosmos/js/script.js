@@ -10,3 +10,7 @@ $('.open-popup').magnificPopup({
   type:'inline',
   midClick: true
 });
+
+function closePopup() {
+  $.magnificPopup.close();
+}

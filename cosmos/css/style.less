@@ -117,6 +117,21 @@ body {
     border-radius: 8px;
     text-align: center;
     padding: 2rem 3rem;
+    #closebutton {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        right: -220px;
+        top: -60px;
+        background-color: transparent;
+        border: none;
+        background: url(../image/37752.png);
+        background-size: cover;
+        &:focus {
+            outline: none;
+        }
+    }
+
     h2 {
         font-size: 25px;
         text-align: center;
@@ -220,5 +235,18 @@ body {
     .header-phone, .roflbtn {
         position: relative;
         left: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #videomilky {
+        width: 350px;
+        height: 197px;
+    }
+    .header-phone, .roflbtn {
+        position: relative;
+        float: right;
+        top:-50px;
+        margin-right: 30px;
     }
 }

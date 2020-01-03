@@ -17,7 +17,7 @@
   <body>
     <div class="container">
       <div class="row header">
-        <div class="col-sm-2 col-xl-3">
+        <div class="col-2 col-xl-3">
           <div class="header-logo">
             <img src="image/logo.png" alt="logo" class="imglogo">
             <p>
@@ -56,6 +56,7 @@
         
         <!--popup form -->
         <div id="test-popup" class="white-popup mfp-hide firstform">
+          <button id="closebutton" type="button" onClick="closePopup();"></button>
           <h2>
             Order the galaxy <br> to your home now!
           </h2>
@@ -64,7 +65,7 @@
             <input class="firstform-input" type="text">
             <label class="firstform-label" for="#">Your favorite anime</label>
             <input class="firstform-input" type="text">
-            <button class="firstform-button button btn">Leave a request</button>
+            <button class="firstform-button button btn" onClick="closePopup();">Leave a request</button>
           </form>
         </div>
       </div>
