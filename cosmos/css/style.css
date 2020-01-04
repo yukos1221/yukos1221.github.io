@@ -163,7 +163,7 @@ body {
   margin-top: 23px;
 }
 .space-slider {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .space-slider .item h3 {
   text-align: center;
@@ -192,21 +192,18 @@ body {
   border: none;
   z-index: 99;
 }
+.arrow:focus {
+  outline: none;
+}
 .prev-arrow {
   left: -38px;
   background: url(../image/button-left.png) center no-repeat;
   background-size: 100%;
 }
-.prev-arrow:focus {
-  outline: none;
-}
 .next-arrow {
   right: -38px;
   background: url(../image/button-rigth.png) center no-repeat;
   background-size: 100%;
-}
-.next-arrow:focus {
-  outline: none;
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   #videomilky {
@@ -237,14 +234,16 @@ body {
 }
 @media screen and (max-width: 575px) {
   #videomilky {
-    width: 350px;
-    height: 197px;
+    width: 80vw;
+    height: 45vw;
+  }
+  .header .imglogo {
+    max-width: 60px;
   }
   .header-phone,
   .roflbtn {
     position: relative;
     float: right;
-    top: -50px;
     margin-right: 30px;
   }
 }
