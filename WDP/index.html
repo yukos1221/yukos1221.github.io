@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/solid.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/regular.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 
     <link rel="stylesheet" href="css/style.css">
     <title>WDP</title>
@@ -18,16 +24,22 @@
     <section>
         <div class="container">
             <div class="navline">
-                <img class="navline-logo" src="img/logo.png" alt="logo">
-                <ul class="navline-ul ">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Servicing</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><i class="fas fa-search"></i></li>
-                </ul>
+                <div class="row">
+                    <div class="col-12 col-lg-2">
+                        <img class="navline-logo" src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="col-12 col-lg-10">
+                        <ul class="navline-ul ">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Servicing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a id="nowrap" href="#">Contact us</a></li>
+                            <li><i class="fas fa-search"></i></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="firstpage">
@@ -38,14 +50,15 @@
                 Very suitable to support all web development project
             </div>
             <div class="buttons">
-                <button class="button button-trans">Our services</button>
-                <button class="button button-green">Hire is now</button>
+                <button class="button button-trans roboto">Our services</button>
+                <button class="button button-green roboto">Hire is now</button>
             </div>
             <div class="chevrondown">
                 <a href="#about-us-section"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
+
     <section id="about-us-section" class="defpage">
         <div class="container">
             <div class="about-us">
@@ -57,7 +70,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-8 offset-2 col-sm-6 offset-sm-0 col-md-4">
                         <div class="about-us-card">
                             <div class="imgdiv">
                                 <img src="img/internet.png" alt="internet">
@@ -88,7 +101,8 @@
             </div>
         </div>
     </section>
-    <section id="bluesec" class="defpage">
+
+    <section class="defpage bluesec">
         <div class="container">
             <div class="our-services">
                 <h2 class="pagetitle">
@@ -99,7 +113,7 @@
                 </div>
                 <div class="our-services-cards">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
                             <div class="our-services-card">
                                 <div class="our-services-card-img">
                                     <i class="fas fa-search"></i>
@@ -115,7 +129,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
                             <div class="our-services-card">
                                 <div class="our-services-card-img">
                                     <i class="fas fa-folder-open"></i>
@@ -131,7 +145,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
                             <div class="our-services-card">
                                 <div class="our-services-card-img">
                                     <i class="fas fa-headset"></i>
@@ -147,7 +161,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
                             <div class="our-services-card">
                                 <div class="our-services-card-img">
                                     <i class="fas fa-book"></i>
@@ -163,7 +177,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
                             <div class="our-services-card">
                                 <div class="our-services-card-img">
                                     <i class="fas fa-lightbulb"></i>
@@ -179,7 +193,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
                             <div class="our-services-card">
                                 <div class="our-services-card-img">
                                     <i class="fas fa-palette"></i>
@@ -200,6 +214,7 @@
             </div>
         </div>
     </section>
+
     <section class="defpage">
         <div class="container">
             <div class="latest-works">
@@ -210,13 +225,17 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at repellat nulla. Aliquid, eligendi est? Vero, animi laborum in sunt quibusdam ipsa quasi excepturi molestiae aspernatur, laboriosam nesciunt incidunt ratione.
                 </div>
                 <div class="buttons">
-                    <button class="button latest-works-button">All</button>
-                    <button class="button latest-works-button">Web Design</button>
-                    <button class="button latest-works-button">Ui/ux Design</button>
-                    <button class="button latest-works-button">Mockups</button>
+                    <div class="buttons-group">
+                        <button class="button latest-works-button">All</button>
+                        <button class="button latest-works-button">Web Design</button>
+                    </div>
+                    <div class="buttons-group">
+                        <button class="button latest-works-button">Ui/ux Design</button>
+                        <button class="button latest-works-button">Mockups</button>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                         <div class="latest-works-img">
                             <div class="dws">
                                 <div class="blocImg">
@@ -230,7 +249,7 @@
                              </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                         <div class="latest-works-img">
                             <div class="dws">
                                 <div class="blocImg">
@@ -244,7 +263,7 @@
                              </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                         <div class="latest-works-img">
                             <div class="dws">
                                 <div class="blocImg">
@@ -258,7 +277,7 @@
                              </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                         <div class="latest-works-img">
                             <div class="dws">
                                 <div class="blocImg">
@@ -272,7 +291,7 @@
                              </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                         <div class="latest-works-img">
                             <div class="dws">
                                 <div class="blocImg">
@@ -286,7 +305,7 @@
                              </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                         <div class="latest-works-img">
                             <div class="dws">
                                 <div class="blocImg">
@@ -301,9 +320,323 @@
                         </div>
                     </div>
                 </div>
-                <button id="#lwbut" class="button button-green">View all</button>
+                <button id="#lwbut" class="button button-green roboto">View all</button>
             </div>
         </div>
-    </section class="defpage">
+    </section>
+
+    <section id="memberpage" class="defpage">
+        <div class="container">
+            <div class="our-team">
+                <h2 class="pagetitle">
+                    Our Team Member
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptates cupiditate veniam odit eveniet illo quam optio? Sequi quaerat libero, vero veniam exercitationem rem ex? Omnis tempore voluptatibus alias ipsa.
+                </div>
+                <div class="our-team-slider">
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy1.png" alt=""></div>
+                        <div class="member-card-title">Alexey Chechet</div>
+                        <div class="member-card-position">General Manager</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy2.png" alt=""></div>
+                        <div class="member-card-title">Alexa Biru</div>
+                        <div class="member-card-position">Office Director</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy3.png" alt=""></div>
+                        <div class="member-card-title">Ronobir Sing</div>
+                        <div class="member-card-position">Admin</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy1.png" alt=""></div>
+                        <div class="member-card-title">Ivan Ermakov</div>
+                        <div class="member-card-position">Fallen Knight</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy2.png" alt=""></div>
+                        <div class="member-card-title">Ilya Vinnikov</div>
+                        <div class="member-card-position">Product Manager</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy3.png" alt=""></div>
+                        <div class="member-card-title">Maxim Eremeev</div>
+                        <div class="member-card-position">Programmer</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy1.png" alt=""></div>
+                        <div class="member-card-title">Yuri Volovinsky</div>
+                        <div class="member-card-position">Revolutionary</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy2.png" alt=""></div>
+                        <div class="member-card-title">Maxim Kraevoy</div>
+                        <div class="member-card-position">Noob Killer</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy3.png" alt=""></div>
+                        <div class="member-card-title">Vyach Koshevsky</div>
+                        <div class="member-card-position">Programmer</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="defpage bluesec">
+        <div class="container">
+            <div class="blog">
+                <h2 class="pagetitle">
+                    Blog
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus esse voluptas perferendis dolorum delectus laudantium doloribus cumque libero soluta dicta tenetur sit et ipsa, qui earum perspiciatis ipsum error nobis.
+                </div>
+
+                <div class="cards">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col1">
+                            <div class="blog-img">
+                                <img src="img/seo.png" alt="SEO">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col2">
+                            <div class="blog-card">
+                                <h3 class="blog-card-title">
+                                    <a href="#">SEO Quis Vestibulum</a>
+                                </h3>
+                                <div class="blog-card-ddcontainer">
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-calendar-alt"></i> 29.11.2019
+                                    </div>
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-file"></i> Development
+                                    </div>
+                                </div>
+                                <div class="blog-card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quam vitae non corrupti nobis alias aperiam quas iste sit fuga earum et nesciunt ut, quaerat minus in! Voluptate, atque magni?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col3">
+                            <div class="blog-card">
+                                <h3 class="blog-card-title">
+                                    <a href="#">SEO Quis Vestibulum</a>
+                                </h3>
+                                <div class="blog-card-ddcontainer">
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-calendar-alt"></i> 14.10.2019
+                                    </div>
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-file"></i> Development
+                                    </div>
+                                </div>
+                                <div class="blog-card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a quis accusamus laborum debitis obcaecati consequatur aperiam cumque, blanditiis ipsum. Illo hic soluta dolor veritatis quam ullam atque et provident.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col4">
+                            <div class="blog-img">
+                                <img src="img/apple-desktop-1.png" alt="desktop">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col5">
+                            <div class="blog-img">
+                                <img src="img/apple-desktop-2.png" alt="desktop">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col6">
+                            <div class="blog-card">
+                                <h3 class="blog-card-title">
+                                    <a href="#">SEO Quis Vestibulum</a>
+                                </h3>
+                                <div class="blog-card-ddcontainer">
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-calendar-alt"></i> 19.08.2019
+                                    </div>
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-file"></i> Development
+                                    </div>
+                                </div>
+                                <div class="blog-card-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium perspiciatis natus laudantium nulla enim nisi aliquam! Atque, odio cupiditate, impedit maxime ut doloribus quasi accusamus libero tempora quos exercitationem quas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-button">
+                    <button class="button button-green roboto">More View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="defpage">
+        <div class="container">
+            <div class="contact-us">
+                <h2 class="pagetitle">
+                    Contact Us
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium esse dolores illo nihil voluptatibus, quaerat ullam fugiat eaque corrupti sunt excepturi suscipit sed unde quidem eos ad veniam dignissimos a.
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-us-el">
+                            <div class="contact-us-el-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-us-el-text">
+                                Nobinagar savar, Dhaka <br> Bangladesh 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-us-el">
+                            <div class="contact-us-el-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-us-el-text">
+                                +8 721 575 95 31 <br>
+                                +8 921 835 18 23
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-us-el">
+                            <div class="contact-us-el-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="contact-us-el-text">
+                                quickworkwdp@gmail.com <br>
+                                quickworkwdp@yahoo.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-us-form"action="#">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="contact-us-form-input forminput" type="text" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="contact-us-form-input forminput" type="text" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <textarea class="contact-us-form-textarea forminput" cols="30" rows="8"  placeholder="Write Message"></textarea>
+                    
+                    <button class="submit roboto">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="endline roboto">
+            All rights Reserved © 2020
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>

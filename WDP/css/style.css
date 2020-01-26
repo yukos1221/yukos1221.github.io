@@ -1,5 +1,7 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
+  font-size: 20px;
 }
 
 * {
@@ -8,13 +10,24 @@ html {
 }
 
 body {
-  font-family: 'OpenSans', sans-serif;
   color: #212121;
 }
 
 body .defpage {
   padding-top: 120px;
   padding-bottom: 100px;
+}
+
+#memberpage {
+  padding-bottom: 200px;
+}
+
+#contact-us {
+  background: url(../img/bg-lastpage.png) no-repeat center center/cover;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 .pagetitle {
@@ -25,10 +38,45 @@ body .defpage {
 
 .pagetext {
   margin: 20px auto 70px auto;
-  width: 650px;
+  max-width: 650px;
   font-size: 15px;
   text-align: center;
   color: #3f3f3f;
+}
+
+.socbutton {
+  color: #00897b;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  margin-left: 12px;
+  border: none;
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+}
+
+.socbutton:hover {
+  color: #ffffff;
+}
+
+.socbutton:focus {
+  outline: none;
+}
+
+.fb:hover {
+  background-color: #3949ab;
+}
+
+.twitter:hover {
+  background-color: #1c9deb;
+}
+
+.cloud:hover {
+  background-color: #851d41;
+}
+
+.ball:hover {
+  background-color: #000;
 }
 
 .button {
@@ -58,12 +106,13 @@ body .defpage {
 }
 
 .navline-logo {
-  width: 100px;
   height: 100px;
+  width: auto;
   display: inline-block;
 }
 
 .navline-ul {
+  padding: 0 50px;
   font-weight: 600;
   margin-top: 40px;
   float: right;
@@ -152,11 +201,11 @@ body .defpage {
   text-align: center;
 }
 
-#bluesec {
+.bluesec {
   background-color: #e4fdf9;
 }
 
-#bluesec .our-services-card {
+.bluesec .our-services-card {
   margin-top: 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -164,25 +213,25 @@ body .defpage {
   padding: 50px 30px 40px 30px;
 }
 
-#bluesec .our-services-card-img {
+.bluesec .our-services-card-img {
   font-size: 70px;
   text-align: center;
 }
 
-#bluesec .our-services-card-title {
+.bluesec .our-services-card-title {
   margin-top: 15px;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
 }
 
-#bluesec .our-services-card-text {
+.bluesec .our-services-card-text {
   min-height: 170px;
   font-size: 16px;
   text-align: center;
 }
 
-#bluesec .our-services-card-button {
+.bluesec .our-services-card-button {
   display: block;
   color: #212121;
   border: 2px solid #212121;
@@ -191,20 +240,24 @@ body .defpage {
   margin: 30px auto 0 auto;
 }
 
-#bluesec .our-services-card:hover {
+.bluesec .our-services-card:hover {
   background-color: #00897b;
   color: #ffffff;
   -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-#bluesec .our-services-card:hover .button {
+.bluesec .our-services-card:hover .button {
   color: #fff;
   border-color: #fff;
 }
 
 .latest-works .buttons {
   text-align: center;
+}
+
+.latest-works .buttons .buttons-group {
+  display: inline-block;
 }
 
 .latest-works-button {
@@ -234,7 +287,295 @@ body .defpage {
 .latest-works .button-green {
   display: block;
   width: 200px;
-  margin: 100px auto 0 auto;
+  margin: 80px auto 0 auto;
+}
+
+.our-team .member-card .member-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.our-team .member-card-title {
+  margin-top: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.our-team .member-card-position {
+  font-size: 15px;
+  text-align: center;
+}
+
+.our-team .member-card-buttons {
+  text-align: center;
+}
+
+.our-team .member-card-buttons-group {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.our-team .member-card:focus {
+  outline: none;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 15px;
+  line-height: 20px;
+  padding-top: 90px;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .8;
+  color: #00897b;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3949ab;
+}
+
+.blog-img img {
+  width: 100%;
+  padding: 0 2px;
+}
+
+.blog-card {
+  padding-top: 30px;
+  padding-right: 100px;
+}
+
+.blog-card-title a {
+  font-size: 25px;
+  font-weight: 600;
+  color: #212121;
+  text-decoration: none;
+}
+
+.blog-card-title a:hover {
+  color: #00897b;
+}
+
+.blog-card-ddcontainer {
+  margin: 15px 0;
+}
+
+.blog-card-ddcontainer-item {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.blog-card-ddcontainer .far {
+  margin-right: 4px;
+}
+
+.blog-card-text {
+  font-size: 15px;
+}
+
+.blog-button {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.blog-button button {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.contact-us {
+  color: #fff;
+  padding-bottom: 70px;
+}
+
+.contact-us .pagetext {
+  color: #ffffff;
+}
+
+.contact-us-el {
+  margin-top: 40px;
+}
+
+.contact-us-el-icon {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  background-color: #3949ab;
+  border-radius: 100%;
+  position: relative;
+}
+
+.contact-us-el-icon i {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact-us-el-text {
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-us-form {
+  padding: 70px 100px 0 100px;
+}
+
+.contact-us-form .forminput {
+  margin-top: 20px;
+  font-weight: 600;
+  padding: 20px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+}
+
+.contact-us-form .forminput:focus {
+  outline: none;
+}
+
+.contact-us-form-textarea {
+  margin-top: 22px;
+}
+
+.contact-us-form .submit {
+  font-weight: 700;
+  margin-top: 15px;
+  float: right;
+  padding: 16px 60px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 7px;
+}
+
+.endline {
+  margin: 15px 0;
+  font-weight: 700;
+  background-color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .navline .navline-ul li {
+    margin-left: 20px;
+  }
+  .our-team .member-card .member-img img {
+    max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact-us-form {
+    padding: 70px 20px 0 20px;
+  }
+  .our-team .member-card-buttons-group {
+    display: block;
+  }
+  .navline-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .navline .navline-ul {
+    margin-top: 20px;
+  }
+  .navline .navline-ul li {
+    margin-left: 50px;
+  }
+  .navline .navline-ul li #nowrap {
+    white-space: nowrap;
+  }
+  .our-team .member-card .member-img img {
+    max-width: 220px;
+  }
+  .blog .blog-button {
+    margin-top: 0px;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .cards .blog-card {
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 80px;
+  }
+  .cards .col1, .cards .col2, .cards .col3, .cards .col4, .cards .col5, .cards .col6 {
+    width: 100%;
+  }
+  .cards .col1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .cards .col2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cards .col3 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .cards .col4 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .cards .col5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .cards .col6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .latest-works .buttons .buttons-group {
+    display: block;
+  }
+  .navline .navline-ul li {
+    margin-left: 50px;
+  }
+  .blog .blog-card {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-us-form .submit {
+    float: none;
+    display: block;
+    margin: 15px auto 0px auto;
+  }
+  .firstpage h1 {
+    font-size: 40px;
+  }
+  .firstpage .buttons .button-green {
+    display: block;
+    margin: 20px auto;
+  }
+  .navline .navline-ul li {
+    margin-left: 55px;
+  }
 }
 
 .dws {
