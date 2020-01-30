@@ -22,7 +22,7 @@ body .defpage {
   padding-bottom: 200px;
 }
 
-#contact-us {
+#contact-us-section {
   background: url(../img/bg-lastpage.png) no-repeat center center/cover;
 }
 
@@ -84,7 +84,6 @@ body .defpage {
   padding: 13px 0;
   text-transform: uppercase;
   color: #fff;
-  font-size: 20px;
 }
 
 .button:focus {
@@ -126,7 +125,6 @@ body .defpage {
 
 .navline-ul li a {
   color: #212121;
-  font-size: 20px;
   text-decoration: none;
 }
 
@@ -192,7 +190,6 @@ body .defpage {
 .about-us-card-title {
   text-align: center;
   font-weight: 600;
-  font-size: 20px;
   margin-top: 35px;
 }
 
@@ -221,7 +218,6 @@ body .defpage {
 .bluesec .our-services-card-title {
   margin-top: 15px;
   font-weight: 600;
-  font-size: 20px;
   text-align: center;
 }
 
@@ -284,12 +280,6 @@ body .defpage {
   width: 100%;
 }
 
-.latest-works .button-green {
-  display: block;
-  width: 200px;
-  margin: 80px auto 0 auto;
-}
-
 .our-team .member-card .member-img img {
   display: block;
   margin: 0 auto;
@@ -298,7 +288,6 @@ body .defpage {
 
 .our-team .member-card-title {
   margin-top: 15px;
-  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 600;
   text-align: center;
@@ -379,16 +368,6 @@ body .defpage {
   font-size: 15px;
 }
 
-.blog-button {
-  margin-top: 100px;
-  text-align: center;
-}
-
-.blog-button button {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .contact-us {
   color: #fff;
   padding-bottom: 70px;
@@ -426,6 +405,15 @@ body .defpage {
   font-weight: 600;
   margin-top: 20px;
   text-align: center;
+}
+
+.contact-us-el-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-us-el-text a:hover {
+  color: #bfbfbf;
 }
 
 .contact-us-form {
@@ -492,14 +480,11 @@ body .defpage {
   .navline .navline-ul li {
     margin-left: 50px;
   }
-  .navline .navline-ul li #nowrap {
+  .navline .navline-ul li #contact-us-link {
     white-space: nowrap;
   }
   .our-team .member-card .member-img img {
     max-width: 220px;
-  }
-  .blog .blog-button {
-    margin-top: 0px;
   }
   .cards {
     display: -webkit-box;
@@ -554,9 +539,6 @@ body .defpage {
   }
   .navline .navline-ul li {
     margin-left: 50px;
-  }
-  .blog .blog-card {
-    padding: 10px;
   }
 }
 
