@@ -118,6 +118,10 @@ body .defpage {
   display: block;
 }
 
+.navline-ul .frrow {
+  display: inline-block;
+}
+
 .navline-ul li {
   margin-left: 35px;
   display: inline;
@@ -230,10 +234,18 @@ body .defpage {
 .bluesec .our-services-card-button {
   display: block;
   color: #212121;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border: 2px solid #212121;
   background-color: rgba(1, 1, 1, 0);
   width: 150px;
   margin: 30px auto 0 auto;
+}
+
+.bluesec .our-services-card-button:hover {
+  color: #212121 !important;
+  background-color: #fff;
+  border-color: #212121 !important;
 }
 
 .bluesec .our-services-card:hover {
@@ -284,6 +296,8 @@ body .defpage {
   display: block;
   margin: 0 auto;
   max-width: 320px;
+  max-height: 280px;
+  border-radius: 10px;
 }
 
 .our-team .member-card-title {
@@ -454,6 +468,73 @@ body .defpage {
   text-align: center;
 }
 
+.servicing-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000050;
+  text-align: center;
+  z-index: 130;
+}
+
+.servicing-modal-body {
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  width: 70vw;
+  min-height: 200px;
+  max-height: 80vh;
+  background-color: #fff;
+  padding: 30px 30px 50px 30px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+.servicing-modal-body-img {
+  font-size: 80px;
+}
+
+.servicing-modal-body h2 {
+  margin: 10px;
+  font-size: 40px;
+}
+
+.servicing-modal-body-text {
+  margin-top: 20px;
+  font-weight: 20px;
+  text-indent: 40px;
+}
+
+.servicing-modal-body .exitbtn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 5px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  border: none;
+  background-color: #fff;
+}
+
+.servicing-modal-body .exitbtn:focus {
+  outline: none;
+}
+
+.servicing-modal-body .exitbtn:hover {
+  color: #941f16;
+}
+
+.servicing-modal-body .exitbtn .far {
+  display: block;
+  margin: auto;
+}
+
 @media screen and (max-width: 1200px) {
   .navline .navline-ul li {
     margin-left: 20px;
@@ -475,7 +556,12 @@ body .defpage {
     margin: 0 auto;
   }
   .navline .navline-ul {
+    float: none;
+    text-align: center;
     margin-top: 20px;
+  }
+  .navline .navline-ul .frrow {
+    display: block;
   }
   .navline .navline-ul li {
     margin-left: 50px;
@@ -543,6 +629,15 @@ body .defpage {
 }
 
 @media screen and (max-width: 576px) {
+  .servicing-modal-body {
+    padding: 30px 15px 30px 15px;
+  }
+  .prev-arrow {
+    left: 30px !important;
+  }
+  .next-arrow {
+    right: 30px !important;
+  }
   .contact-us-form .submit {
     float: none;
     display: block;
@@ -555,8 +650,15 @@ body .defpage {
     display: block;
     margin: 20px auto;
   }
+  .navline .navline-ul {
+    margin-top: 40px;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
   .navline .navline-ul li {
-    margin-left: 55px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
   }
 }
 
@@ -646,5 +748,30 @@ body .defpage {
 .dws:hover .blocText::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  z-index: 99;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.prev-arrow {
+  left: -38px;
+  background: url(../img/button-left.png) center no-repeat;
+  background-size: 90%;
+}
+
+.next-arrow {
+  right: -38px;
+  background: url(../img/button-rigth.png) center no-repeat;
+  background-size: 90%;
 }
 /*# sourceMappingURL=style.css.map */

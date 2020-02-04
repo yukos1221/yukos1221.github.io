@@ -30,11 +30,13 @@
                     </div>
                     <div class="col-12 col-lg-10">
                         <ul class="navline-ul ">
-                            <li><a id="about-us-link" href="#about-us-section">About</a></li>
-                            <li><a id="servicing-link" href="#servicing-section">Servicing</a></li>
-                            <li><a id="portfolio-link" href="#portfolio-section">Portfolio</a></li>
-                            <li><a id="blog-link" href="#blog-section">Blog</a></li>
-                            <li><a id="contact-us-link" href="#contact-us-section">Contact us</a></li>
+                            <div class="frrow">
+                                <li><a class="about-us-link" href="#about-us-section">About</a></li>
+                                <li><a class="servicing-link" href="#servicing-section">Servicing</a></li>
+                                <li><a class="portfolio-link" href="#portfolio-section">Portfolio</a></li>
+                            </div>
+                            <li><a class="blog-link" href="#blog-section">Blog</a></li>
+                            <li><a class="contact-us-link" href="#contact-us-section">Contact us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,11 +50,11 @@
                 Very suitable to support all web development project
             </div>
             <div class="buttons">
-                <button id="servicing-link2" class="button button-trans roboto">Our services</button>
-                <button class="button button-green roboto">Hire now</button>
+                <button class="button button-trans roboto servicing-link">Our services</button>
+                <button class="button button-green roboto contact-us-link">Hire now</button>
             </div>
             <div class="chevrondown">
-                <a id="about-us-link2" href="#about-us-section"><i class="fas fa-chevron-down"></i></a>
+                <a class="about-us-link" href="#about-us-section"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
@@ -122,7 +124,7 @@
                                 <div class="our-services-card-text">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati molestiae ex dolores quo dolorem, quas nisi, cum, ipsa adipisci qui quisquam? Libero eum aut nostrum placeat suscipit debitis odio itaque?</p>
                                 </div>
-                                <button class="our-services-card-button button">
+                                <button name="btn1" class="our-services-card-button button ourservbtn">
                                     Read more
                                 </button>
                             </div>
@@ -138,7 +140,7 @@
                                 <div class="our-services-card-text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta tempore eveniet, fuga similique totam placeat delectus nemo maiores ut repudiandae odio deserunt optio nulla ipsum possimus veritatis tempora blanditiis nobis.</p>
                                 </div>
-                                <button class="our-services-card-button button">
+                                <button name="btn2" class="our-services-card-button button ourservbtn">
                                     Read more
                                 </button>
                             </div>
@@ -154,7 +156,7 @@
                                 <div class="our-services-card-text">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta dolorum eum cumque facilis fugiat repellendus? Fugiat odit iusto at consectetur, nisi distinctio odio quos. Culpa possimus ducimus voluptate iste.</p>
                                 </div>
-                                <button class="our-services-card-button button">
+                                <button name="btn3" class="our-services-card-button button ourservbtn">
                                     Read more
                                 </button>
                             </div>
@@ -170,7 +172,7 @@
                                 <div class="our-services-card-text">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem tenetur modi animi! Aspernatur harum nesciunt expedita unde adipisci doloremque eaque, eius asperiores perferendis voluptates consequatur debitis eveniet numquam suscipit.</p>
                                 </div>
-                                <button class="our-services-card-button button">
+                                <button name="btn4" class="our-services-card-button button ourservbtn">
                                     Read more
                                 </button>
                             </div>
@@ -186,7 +188,7 @@
                                 <div class="our-services-card-text">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, iusto. Laborum eos quisquam eligendi, quam delectus unde omnis placeat ipsum magnam excepturi ipsam, nostrum alias quibusdam illum quos ullam accusamus?</p>
                                 </div>
-                                <button class="our-services-card-button button">
+                                <button name="btn5" class="our-services-card-button button ourservbtn">
                                     Read more
                                 </button>
                             </div>
@@ -200,9 +202,9 @@
                                     <p>Design</p>
                                 </div>
                                 <div class="our-services-card-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, corrupti? Veniam voluptates totam veritatis nisi labore necessitatibus! Nemo, ea, autem fugiat maxime explicabo dolor, at id cupiditate nam incidunt quidem.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, corrupti? Veniam voluptates totam veritatis nisi labore necessitatibus! Nemo, ea, autem fugiat maxime explicabo dolor, at name cupiditate nam incidunt quidem.</p>
                                 </div>
-                                <button class="our-services-card-button button">
+                                <button name="btn6" class="our-services-card-button button ourservbtn">
                                     Read more
                                 </button>
                             </div>
@@ -333,7 +335,7 @@
                 </div>
                 <div class="our-team-slider">
                     <div class="member-card">
-                        <div class="member-img"><img src="img/guy1.png" alt=""></div>
+                        <div class="member-img"><img src="img/chechet.jpg" alt="Alexey Chechet"></div>
                         <div class="member-card-title">Alexey Chechet</div>
                         <div class="member-card-position">General Manager</div>
                         <div class="member-card-buttons">
@@ -348,38 +350,39 @@
                         </div>
                     </div>
                     <div class="member-card">
-                        <div class="member-img"><img src="img/guy2.png" alt=""></div>
-                        <div class="member-card-title">Alexa Biru</div>
-                        <div class="member-card-position">Office Director</div>
-                        <div class="member-card-buttons">
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
-                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
-                            </div>
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
-                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-img"><img src="img/guy3.png" alt=""></div>
-                        <div class="member-card-title">Ronobir Sing</div>
-                        <div class="member-card-position">Admin</div>
-                        <div class="member-card-buttons">
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
-                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
-                            </div>
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
-                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-img"><img src="img/guy1.png" alt=""></div>
+                        <div class="member-img"><img src="img/ivan.jpg" alt="Ivan Ermakov"></div>
                         <div class="member-card-title">Ivan Ermakov</div>
+                        <div class="member-card-position">Graphic Designer</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/max.jpg" alt="Maxim Kraevoy"></div>
+                        <div class="member-card-title">Maxim Kraevoy</div>
+                        <div class="member-card-position">Product Manager</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/guy1.png" alt="Ivan Vinnikov"></div>
+                        <div class="member-card-title">Ivan Vinnikov</div>
                         <div class="member-card-position">Cook</div>
                         <div class="member-card-buttons">
                             <div class="member-card-buttons-group">
@@ -393,22 +396,7 @@
                         </div>
                     </div>
                     <div class="member-card">
-                        <div class="member-img"><img src="img/guy2.png" alt=""></div>
-                        <div class="member-card-title">Ilya Vinnikov</div>
-                        <div class="member-card-position">Product Manager</div>
-                        <div class="member-card-buttons">
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
-                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
-                            </div>
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
-                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-img"><img src="img/guy3.png" alt=""></div>
+                        <div class="member-img"><img src="img/guy2.png" alt="Maxim Eremeev"></div>
                         <div class="member-card-title">Maxim Eremeev</div>
                         <div class="member-card-position">Programmer</div>
                         <div class="member-card-buttons">
@@ -423,39 +411,9 @@
                         </div>
                     </div>
                     <div class="member-card">
-                        <div class="member-img"><img src="img/guy1.png" alt=""></div>
+                        <div class="member-img"><img src="img/guy3.png" alt="Yuri Volovinsky"></div>
                         <div class="member-card-title">Yuri Volovinsky</div>
-                        <div class="member-card-position">Cleaner</div>
-                        <div class="member-card-buttons">
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
-                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
-                            </div>
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
-                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-img"><img src="img/guy2.png" alt=""></div>
-                        <div class="member-card-title">Maxim Kraevoy</div>
-                        <div class="member-card-position">Personal Doctor</div>
-                        <div class="member-card-buttons">
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
-                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
-                            </div>
-                            <div class="member-card-buttons-group">
-                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
-                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-img"><img src="img/guy3.png" alt=""></div>
-                        <div class="member-card-title">Vyach Koshevsky</div>
-                        <div class="member-card-position">Programmer</div>
+                        <div class="member-card-position">Psychotherapist</div>
                         <div class="member-card-buttons">
                             <div class="member-card-buttons-group">
                                 <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
@@ -622,11 +580,29 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="endline roboto">
             All rights Reserved © 2020
         </div>
     </section>
+
+    <div class="servicing-modal">
+        <div class="servicing-modal-body">
+            <div class="servicing-modal-body-img">
+                <i id="modal-img" class="fas"></i>
+            </div>
+            <h2 id="modal-title">
+                Portfolio
+            </h2>
+            <div class="servicing-modal-body-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rem eum itaque exercitationem quidem modi iste fugiat dolor deleniti eveniet, temporibus nostrum, quasi in ratione! Sit cumque sunt ab distinctio.
+                Pariatur illo incidunt officiis dignissimos, voluptatibus dicta voluptate unde sunt enim ab, ex exercitationem delectus doloremque, itaque nostrum accusantium blanditiis provident! Nostrum est eos cum quae quos at dolor omnis!
+                Obcaecati sit optio sapiente odit pariatur quibusdam commodi aut quidem, doloribus cumque vitae, non ut, voluptate dolor porro consectetur. Ipsam earum aspernatur voluptates! Neque quos eos iste suscipit maxime perferendis.
+            </div>
+            <button class="exitbtn"><i class="far fa-times-circle"></i></button>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
