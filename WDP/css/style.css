@@ -289,6 +289,7 @@ body .defpage {
 }
 
 .latest-works-img img {
+  cursor: default;
   width: 100%;
 }
 
@@ -461,6 +462,10 @@ body .defpage {
   border-radius: 7px;
 }
 
+.contact-us-form .submit:focus {
+  outline: none;
+}
+
 .endline {
   margin: 15px 0;
   font-weight: 700;
@@ -533,6 +538,28 @@ body .defpage {
 .servicing-modal-body .exitbtn .far {
   display: block;
   margin: auto;
+}
+
+.formsendedmsg {
+  background-color: #fff;
+  border: 2px solid #212121;
+  border-radius: 20px;
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  z-index: 50;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding: 20px 30px;
+}
+
+.formsendedmsg-text span {
+  margin: 0px 7px;
+}
+
+.formsendedmsg-text .fas {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -688,6 +715,7 @@ body .defpage {
 }
 
 .blocText {
+  cursor: default;
   position: absolute;
   top: 65px;
   left: 30px;

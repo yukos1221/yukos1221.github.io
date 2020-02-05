@@ -210,6 +210,7 @@ a
         padding-top: 35px
         width: 100%
         img
+            cursor: default
             width:  100%
 
 .our-team
@@ -334,6 +335,8 @@ a
             text-transform: uppercase
             border: none
             border-radius: 7px
+            &:focus
+                outline: none
 
 .endline
     margin: 15px 0
@@ -389,6 +392,22 @@ a
                 display: block
                 margin: auto
 
+.formsendedmsg
+    background-color: #fff
+    border: 2px solid $black
+    border-radius: 20px
+    display: none
+    position: fixed
+    top: 50px
+    left: 50%
+    z-index: 50
+    transform: translate(-50%,0)
+    padding: 20px 30px
+    &-text
+        span
+            margin: 0px 7px
+        .fas
+            font-size: 25px
 
 
 
@@ -493,7 +512,8 @@ a
     filter: blur(1px) 
     opacity: .5 
  
-.blocText  
+.blocText
+    cursor: default
     position: absolute
     top: 65px 
     left: 30px 

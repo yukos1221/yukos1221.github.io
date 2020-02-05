@@ -5,8 +5,12 @@ const blogEl = document.querySelectorAll('.blog-link');
 const contactEl = document.querySelectorAll('.contact-us-link');
 const servicingButtons = document.querySelectorAll('.ourservbtn');
 const servicingPage = document.querySelector('.servicing-modal');
-const modalImgElem = document.querySelector('#modal-img')
-const modalTitleElem = document.querySelector('#modal-title')
+const modalImgElem = document.querySelector('#modal-img');
+const modalTitleElem = document.querySelector('#modal-title');
+const latestWorkBtnsElem = document.querySelectorAll('.latworkbtn');
+const latestWorksElem =document.querySelectorAll('.all');
+const submitbtnElem = document.querySelector('#submitbutton');
+const frominputElems = document.querySelectorAll('.forminput');
 
 aboutEl.forEach((item) => {
   item.addEventListener('click', (item) => {
@@ -86,9 +90,56 @@ const showServicingPage = (e) => {
   servicingPage.style.display = 'flex';
 }
 
+const filterWorks = e => {
+  const name = e.target.name;
+  switch (name) {
+    case 'latwork-all':
+      latestWorksElem.forEach(item => {
+        item.style.display = "flex";
+      });
+      break;
+    case 'latwork-web':
+      latestWorksElem.forEach(item => {
+        item.style.display = "none";
+        if (item.classList.contains('web'))
+          item.style.display = "flex";
+      });
+      break;
+    case 'latwork-ux':
+      latestWorksElem.forEach(item => {
+        item.style.display = "none";
+        if (item.classList.contains('ux'))
+          item.style.display = "flex";
+      });
+      break;
+    case 'latwork-mock':
+      latestWorksElem.forEach(item => {
+        item.style.display = "none";
+        if (item.classList.contains('mock'))
+          item.style.display = "flex";
+      });
+      break;
+  }
+}
+
+submitbtnElem.addEventListener('click', (e) => {
+  e.preventDefault();
+  frominputElems.forEach((item) => {
+    item.value = '';
+  })
+  $('.formsendedmsg').fadeIn(500);
+  setTimeout(() => {
+    $('.formsendedmsg').fadeOut(500);
+  }, 2500);
+})
+
 servicingButtons.forEach( item => {
   item.addEventListener('click', showServicingPage);
 });
+
+latestWorkBtnsElem.forEach((item) => {
+  item.addEventListener('click', filterWorks);
+})
 servicingPage.addEventListener('click', closeServicingPage);
 
 $(document).ready(function(){
