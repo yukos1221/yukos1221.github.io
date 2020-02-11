@@ -92,6 +92,9 @@ const showServicingPage = (e) => {
 
 const filterWorks = e => {
   const name = e.target.name;
+  latestWorkBtnsElem.forEach((item) => {
+    item.classList.remove('activebut');
+  })
   switch (name) {
     case 'latwork-all':
       latestWorksElem.forEach(item => {
@@ -120,6 +123,7 @@ const filterWorks = e => {
       });
       break;
   }
+  e.target.classList.add('activebut');
 }
 
 submitbtnElem.addEventListener('click', (e) => {
