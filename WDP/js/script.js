@@ -134,7 +134,7 @@ submitbtnElem.addEventListener('click', (e) => {
   $('.formsendedmsg').fadeIn(500);
   setTimeout(() => {
     $('.formsendedmsg').fadeOut(500);
-  }, 2500);
+  }, 3000);
 })
 
 servicingButtons.forEach( item => {
