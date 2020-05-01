@@ -9,7 +9,9 @@ export default class Main extends React.Component {
                 <div className="container">
                     <div className="row justify-content-center justify-content-sm-between">
                         <Category choiceCategory={this.props.choiceCategory} />
-                        <DisplayCardList cards={this.props.cards} />
+                        <DisplayCardList
+                            cards={this.props.cards}
+                        />
                     </div>
                 </div>
             </main>

@@ -6,7 +6,6 @@ import db from "./db/db";
 export default class App extends React.Component {
     constructor(props) {
         super(props);
-        this.choiceCategory = this.choiceCategory.bind(this);
         this.state = {
             wishlist: [],
             goodsCart: {},
@@ -19,13 +18,14 @@ export default class App extends React.Component {
         return items.sort(() => Math.random() - 0.5);
     }
 
-    choiceCategory(newfilter) {
+    choiceCategory = (newfilter) => {
         this.setState({
             cards: newfilter(db),
         });
-    }
+    };
 
     render() {
+        console.log(this.state.cards);
         return (
             <>
                 <Header />
