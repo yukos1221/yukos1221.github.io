@@ -18,7 +18,7 @@
 
 @-webkit-keyframes error {
     0% {
-        border: 3px solid #ff4747;
+        border: 3px solid #249142;
     }
     25% {
         border: 3px solid #0059ff;
@@ -30,13 +30,13 @@
         border: 3px solid #ff63f5;
     }
     100% {
-        border: 3px solid #ff4747;
+        border: 3px solid #249142;
     }
 }
 
 @keyframes error {
     0% {
-        border: 3px solid #ff4747;
+        border: 3px solid #249142;
     }
     25% {
         border: 3px solid #0059ff;
@@ -48,7 +48,7 @@
         border: 3px solid #ff63f5;
     }
     100% {
-        border: 3px solid #ff4747;
+        border: 3px solid #249142;
     }
 }
 
@@ -112,12 +112,12 @@ button:focus {
     -ms-user-select: none;
     user-select: none;
     margin-top: auto;
-    border: 2px solid #ff4747;
+    border: 2px solid #249142;
     font-weight: 700;
     outline: none;
     min-height: 32px;
     color: #fff;
-    background-color: #ff4747;
+    background-color: #249142;
 }
 
 .btn:hover {
@@ -155,7 +155,7 @@ nav .logo {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0;
-    background-image: url("./img/logo.gif");
+    background-image: url("./img/logo.png");
 }
 
 nav .catalog {
@@ -165,7 +165,7 @@ nav .catalog {
     left: 0;
     z-index: 120;
     background: #ffffff;
-    border: 2px solid #ff4747;
+    border: 2px solid #249142;
     width: 118px;
 }
 
@@ -200,7 +200,7 @@ nav .catalog-button button {
     width: 118px;
     height: 40px;
     border-radius: 3px;
-    background-color: #ff4747;
+    background-color: #249142;
     color: #fff;
     font-weight: 700;
     padding: 0;
@@ -235,7 +235,7 @@ nav .search {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    border: 3px solid #ff4747;
+    border: 3px solid #249142;
 }
 
 nav .search-wrapper {
@@ -283,7 +283,7 @@ nav .search-wrap-brn {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     overflow: hidden;
-    background-color: #ff4747;
+    background-color: #249142;
 }
 
 nav .search-btn {
@@ -291,7 +291,7 @@ nav .search-btn {
     border-color: transparent;
     height: 100%;
     width: 100%;
-    background-color: #ff4747;
+    background-color: #249142;
     border: none;
 }
 
@@ -339,7 +339,7 @@ nav .search-btn::before {
     height: 16px;
     border-radius: 8px;
     padding: 0 8px;
-    background-color: #ff4747;
+    background-color: #249142;
     color: #fff;
     font-size: 12px;
     line-height: 16px;
@@ -420,7 +420,7 @@ nav .search-btn::before {
 }
 
 .category-item:hover {
-    color: #ff4747;
+    color: #249142;
 }
 
 .category-item:before {
@@ -552,7 +552,7 @@ nav .search-btn::before {
 .card-title:hover {
     text-decoration: underline;
     cursor: pointer;
-    color: #ff4747;
+    color: #249142;
 }
 
 .card-body {
@@ -626,7 +626,7 @@ nav .search-btn::before {
 }
 
 .card-store:hover {
-    color: #ff4747;
+    color: #249142;
 }
 
 .cart {
@@ -859,7 +859,7 @@ nav .search-btn::before {
 }
 
 .spinner-loading > div div:nth-child(1) > div {
-    background: #ff4747;
+    background: #249142;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }

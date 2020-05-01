@@ -1,6 +1,12 @@
 import React from "react";
 
 export default class Category extends React.Component {
+    onClickWithParam(dataType) {
+        return this.props.choiceCategory(function (items) {
+            return items.filter((item) => item.category.includes(dataType));
+        });
+    }
+
     render() {
         return (
             <div className="col-6 col-sm-4 col-md-3 col-xl-2">
@@ -14,13 +20,7 @@ export default class Category extends React.Component {
                                 href="/"
                                 onClick={(event) => {
                                     event.preventDefault();
-                                    return this.props.choiceCategory(function (
-                                        items
-                                    ) {
-                                        return items.filter((item) =>
-                                            item.category.includes("mobile")
-                                        );
-                                    });
+                                    return this.onClickWithParam("mobile");
                                 }}
                                 className="category-item category-item__mobile"
                                 data-category="mobile"
@@ -32,13 +32,7 @@ export default class Category extends React.Component {
                             <a
                                 onClick={(event) => {
                                     event.preventDefault();
-                                    return this.props.choiceCategory(function (
-                                        items
-                                    ) {
-                                        return items.filter((item) =>
-                                            item.category.includes("pc")
-                                        );
-                                    });
+                                    return this.onClickWithParam("pc");
                                 }}
                                 href="/"
                                 className="category-item category-item__pc"
@@ -51,13 +45,7 @@ export default class Category extends React.Component {
                             <a
                                 onClick={(event) => {
                                     event.preventDefault();
-                                    return this.props.choiceCategory(function (
-                                        items
-                                    ) {
-                                        return items.filter((item) =>
-                                            item.category.includes("electron")
-                                        );
-                                    });
+                                    return this.onClickWithParam("electron");
                                 }}
                                 href="/"
                                 className="category-item category-item__electron"
@@ -70,13 +58,7 @@ export default class Category extends React.Component {
                             <a
                                 onClick={(event) => {
                                     event.preventDefault();
-                                    return this.props.choiceCategory(function (
-                                        items
-                                    ) {
-                                        return items.filter((item) =>
-                                            item.category.includes("home")
-                                        );
-                                    });
+                                    return this.onClickWithParam("home");
                                 }}
                                 href="/"
                                 className="category-item category-item__home"
@@ -89,13 +71,7 @@ export default class Category extends React.Component {
                             <a
                                 onClick={(event) => {
                                     event.preventDefault();
-                                    return this.props.choiceCategory(function (
-                                        items
-                                    ) {
-                                        return items.filter((item) =>
-                                            item.category.includes("sport")
-                                        );
-                                    });
+                                    return this.onClickWithParam("sport");
                                 }}
                                 href="/"
                                 className="category-item category-item__sport"

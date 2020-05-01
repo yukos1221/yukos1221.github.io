@@ -5,6 +5,7 @@ export default class Header extends React.Component {
         super(props);
         this.state = {
             value: "",
+            formClasses: ["search"],
         };
     }
 
@@ -18,6 +19,14 @@ export default class Header extends React.Component {
             this.props.choiceCategory(filt);
             this.setState({ value: "" });
         } else {
+            this.setState({
+                formClasses: ["search", "error"],
+            });
+            setTimeout(() => {
+                this.setState({
+                    formClasses: ["search"],
+                });
+            }, 2000);
         }
     }
 
@@ -28,7 +37,13 @@ export default class Header extends React.Component {
                     <div className="container">
                         <div className="row justify-content-between align-items-center">
                             <a className="logo" href="index.html"></a>
-                            <form className="search">
+                            <form
+                                className={this.state.formClasses.join(" ")}
+                                onSubmit={(event) => {
+                                    event.preventDefault();
+                                    this.onSubmit();
+                                }}
+                            >
                                 <div className="search-wrapper">
                                     <input
                                         value={this.state.value}
