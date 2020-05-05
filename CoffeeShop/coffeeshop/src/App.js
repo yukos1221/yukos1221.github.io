@@ -14,6 +14,20 @@ export default class App extends React.Component {
         };
     }
 
+    toggleWishlist = (id) => {
+        let localarr = this.state.wishlist.slice();
+        if (localarr.includes(id)) {
+            localarr.splice(localarr.indexOf(id), 1);
+            this.setState({
+                wishlist: localarr,
+            });
+        } else {
+            this.setState({
+                wishlist: [...this.state.wishlist, id],
+            });
+        }
+    };
+
     defaultFilter(items) {
         return items.sort(() => Math.random() - 0.5);
     }
@@ -27,10 +41,14 @@ export default class App extends React.Component {
     render() {
         return (
             <>
-                <Header choiceCategory={this.choiceCategory} />
+                <Header
+                    choiceCategory={this.choiceCategory}
+                    wishlist={this.state.wishlist}
+                />
                 <Main
                     cards={this.state.cards}
                     choiceCategory={this.choiceCategory}
+                    wishlistPack={[this.state.wishlist, this.toggleWishlist]}
                 />
             </>
         );

@@ -13,7 +13,11 @@ export default class DisplayCardList extends React.Component {
                         <p>{string}</p>
                         {this.props.cards
                             ? this.props.cards.map((element) => (
-                                  <Card elem={element} key={element.id} />
+                                  <Card
+                                      elem={element}
+                                      key={element.id}
+                                      wishlistPack={this.props.wishlistPack}
+                                  />
                               ))
                             : null}
                     </div>

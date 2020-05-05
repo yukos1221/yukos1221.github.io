@@ -11,6 +11,7 @@ export default class Main extends React.Component {
                         <Category choiceCategory={this.props.choiceCategory} />
                         <DisplayCardList
                             cards={this.props.cards}
+                            wishlistPack={this.props.wishlistPack}
                         />
                     </div>
                 </div>

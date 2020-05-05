@@ -71,8 +71,23 @@ export default class Header extends React.Component {
                             <a href="/" className="nav-elements" id="cart">
                                 <span className="counter">0</span>
                             </a>
-                            <a href="/" className="nav-elements" id="wishlist">
-                                <span className="counter">0</span>
+                            <a
+                                href="/"
+                                className="nav-elements"
+                                id="wishlist"
+                                onClick={(event) => {
+                                    let fakearr = this.props.wishlist.slice();
+                                    event.preventDefault();
+                                    this.props.choiceCategory((items) =>
+                                        items.filter((item) =>
+                                            fakearr.includes(item.id)
+                                        )
+                                    );
+                                }}
+                            >
+                                <span className="counter">
+                                    {this.props.wishlist.length}
+                                </span>
                             </a>
                         </div>
                     </div>

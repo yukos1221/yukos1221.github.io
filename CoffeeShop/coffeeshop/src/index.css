@@ -431,7 +431,6 @@ nav .search-btn::before {
     content: "";
     width: 24px;
     height: 24px;
-    vertical-align: top;
     background-image: url(./img/icons.png);
     background-repeat: no-repeat;
 }
@@ -574,7 +573,7 @@ nav .search-btn::before {
 .card-add-cart {
     display: none;
     margin: 0 auto;
-    background: #ff9a00;
+    background: #0d881e;
     padding: 3px 9px;
     min-width: 165px;
     color: #fff;
@@ -601,7 +600,7 @@ nav .search-btn::before {
 }
 
 .card-add-wishlist:hover {
-    background-color: #f90;
+    background-color: rgb(58, 184, 111);
     background-position: 4px -2588px;
 }
 
