@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Main from "./Main/Main";
+import Basket from './Basket'
 import db from "./db/db";
 
 export default class App extends React.Component {
@@ -13,6 +14,21 @@ export default class App extends React.Component {
             isCartOpen: false,
         };
     }
+
+    addToCartMethod = (id) => {
+        let newGoods = Object.assign({}, this.state.goodsCart);
+        if (this.state.goodsCart[id]) {
+            newGoods[id] = newGoods[id] + 1;
+        } else {
+            newGoods[id] = 1;
+        }
+        this.setState({
+            wishlist: this.state.wishlist,
+            cards: this.state.cards,
+            isCartOpen: this.state.isCartOpen,
+            goodsCart: newGoods,
+        });
+    };
 
     toggleWishlist = (id) => {
         let localarr = this.state.wishlist.slice();
@@ -44,12 +60,15 @@ export default class App extends React.Component {
                 <Header
                     choiceCategory={this.choiceCategory}
                     wishlist={this.state.wishlist}
+                    goodsCart={this.state.goodsCart}
                 />
                 <Main
                     cards={this.state.cards}
                     choiceCategory={this.choiceCategory}
                     wishlistPack={[this.state.wishlist, this.toggleWishlist]}
+                    addToCartMethod={this.addToCartMethod}
                 />
+                {this.state.isCartOpen ? <Basket /> : null}
             </>
         );
     }

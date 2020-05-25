@@ -36,7 +36,7 @@ export default class Header extends React.Component {
                 <nav>
                     <div className="container">
                         <div className="row justify-content-between align-items-center">
-                            <a className="logo" href="index.html"></a>
+                            <a className="logo" href="/"></a>
                             <form
                                 className={this.state.formClasses.join(" ")}
                                 onSubmit={(event) => {
@@ -69,7 +69,9 @@ export default class Header extends React.Component {
                                 </div>
                             </form>
                             <a href="/" className="nav-elements" id="cart">
-                                <span className="counter">0</span>
+                                <span className="counter">
+                                    {Object.keys(this.props.goodsCart).length}
+                                </span>
                             </a>
                             <a
                                 href="/"

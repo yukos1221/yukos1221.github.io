@@ -12,6 +12,7 @@ export default class Main extends React.Component {
                         <DisplayCardList
                             cards={this.props.cards}
                             wishlistPack={this.props.wishlistPack}
+                            addToCartMethod={this.props.addToCartMethod}
                         />
                     </div>
                 </div>

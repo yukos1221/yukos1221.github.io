@@ -17,6 +17,7 @@ export default class DisplayCardList extends React.Component {
                                       elem={element}
                                       key={element.id}
                                       wishlistPack={this.props.wishlistPack}
+                                      addToCartMethod={this.props.addToCartMethod}
                                   />
                               ))
                             : null}

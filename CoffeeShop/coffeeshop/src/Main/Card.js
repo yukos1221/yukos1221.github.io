@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ elem, wishlistPack }) {
+export default function Card({ elem, wishlistPack, addToCartMethod }) {
     const wishlist = wishlistPack[0];
     let fakewishlist = wishlist.slice();
     const toggleWishlist = wishlistPack[1];
@@ -26,6 +26,7 @@ export default function Card({ elem, wishlistPack }) {
                     <div className="card-price">{elem.price} ₽</div>
                     <div>
                         <button
+                            onClick={() => addToCartMethod(elem.id)}
                             className="card-add-cart"
                             data-goods-id={elem.id}
                         >
