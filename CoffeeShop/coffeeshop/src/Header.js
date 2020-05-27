@@ -68,7 +68,15 @@ export default class Header extends React.Component {
                                     ></button>
                                 </div>
                             </form>
-                            <a href="/" className="nav-elements" id="cart">
+                            <a
+                                href="/"
+                                className="nav-elements"
+                                id="cart"
+                                onClick={(event) => {
+                                    event.preventDefault();
+                                    this.props.toggleIsCartOpen();
+                                }}
+                            >
                                 <span className="counter">
                                     {Object.keys(this.props.goodsCart).length}
                                 </span>
