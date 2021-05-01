@@ -1,6 +1,6 @@
 import React from 'react'
 import { createUseStyles } from "react-jss"
-import Button from '../../../../components/Button';
+// import Button from '../../../../components/Button';
 import styles from "./styles"
 
 const useStyles = createUseStyles(styles);
@@ -21,9 +21,9 @@ const MainBanner = () => {
         на пожертвования попечителей.
       </h3>
       <div className={classes.buttonsRow}>
-        <Button className={classes.button}>
+        {/* <Button className={classes.button}>
           Подать заявку
-        </Button>
+        </Button> */}
       </div>
     </div>
   )

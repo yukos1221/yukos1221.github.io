@@ -1,3 +1,4 @@
+import breakpoints from '../../lib/breakpoints';
 import { MAIN_COLOR, SECONDARY_COLOR } from '../../lib/constants';
 
 const styles = () => ({
@@ -6,6 +7,15 @@ const styles = () => ({
     justifyContent: 'space-between',
     width: "100%",
     height: "8.5rem",
+    [breakpoints.down('mb')]: {
+      height: '6.25rem',
+    },
+    [breakpoints.down('sm')]: {
+      height: '5rem',
+    },
+    [breakpoints.down('exs')]: {
+      height: '3.5rem',
+    },
   },
   greyBg: {
     backgroundColor: '#E5E5E5'
@@ -17,6 +27,12 @@ const styles = () => ({
     alignSelf: 'center',
     alignItems: 'center',
     marginLeft: '3rem',
+    [breakpoints.down('sm')]: {
+      marginLeft: '2rem',
+    },
+    [breakpoints.down('exs')]: {
+      marginLeft: '1rem',
+    },
   },
   logo: {
     height: '100%',
@@ -24,10 +40,19 @@ const styles = () => ({
   logoText: {
     marginLeft: '1rem',
     fontFamily: 'Geometric Sans Serif',
-    fontSize: '1.375rem',
+    fontSize: '22px',
     textTransform: 'uppercase',
     color: SECONDARY_COLOR,
     width: 'fit-content',
+    [breakpoints.down('mb')]: {
+      fontSize: '18px',
+    },
+    [breakpoints.down('sm')]: {
+      fontSize: '16px',
+    },
+    [breakpoints.down('exs')]: {
+      fontSize: '11px',
+    },
   },
   marked: {
     color: MAIN_COLOR,

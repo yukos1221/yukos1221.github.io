@@ -1,6 +1,8 @@
+import React, { useState } from 'react'
 import { Checkbox } from '@material-ui/core';
-import React from 'react'
 import { createUseStyles } from "react-jss"
+import Snackbar from '@material-ui/core/Snackbar';
+import Alert from '@material-ui/lab/Alert';
 import Button from '../../../../components/Button';
 import styles from "./styles"
 
@@ -8,13 +10,35 @@ const useStyles = createUseStyles(styles);
 
 const FormBanner = () => {
   const classes = useStyles();
+  const [open, setOpen] = useState(false)
+  const [formRef, setFormRef] = useState(null)
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const onSubmit = e => {
+    e.preventDefault()
+    setOpen(true);
+
+    formRef.reset()
+  }
 
   return (
     <div className={classes.container}>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert elevation={6} variant="filled" onClose={handleClose} severity="success">
+          Заявка успиешно отправлена!
+        </Alert>
+      </Snackbar>
       <h3 className={classes.bannerName}>
         Подать заявку
       </h3>
-      <form className={classes.form}>
+      <form ref={setFormRef} className={classes.form} onSubmit={onSubmit}>
         <div className={classes.leftPart}>
           <div className={classes.inputBlock}>
             <label className={classes.labelStrong} htmlFor="projectName">название вашего проекта</label>

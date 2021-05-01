@@ -2,9 +2,9 @@ import React from "react"
 import { createUseStyles } from "react-jss"
 
 import Header from '../../components/Header'
+import Head from '../../containers/Head/index.jsx'
 import FormBanner from './components/FormBanner'
 import MainBanner from './components/MainBanner'
-import ProjectsBanner from './components/ProjectsBanner'
 import TrusteeBanner from './components/TrusteeBanner'
 import styles from "./styles"
 
@@ -15,9 +15,9 @@ const MainPage = () => {
 
   return (
       <div className={classes.container}>
+        <Head />
         <Header />
         <MainBanner />
-        <ProjectsBanner />
         <FormBanner />
         <TrusteeBanner />
         <Header isFooter={true} />

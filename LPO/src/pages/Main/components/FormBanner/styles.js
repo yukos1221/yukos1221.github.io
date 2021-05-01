@@ -1,3 +1,4 @@
+import breakpoints from '../../../../lib/breakpoints';
 import { MAIN_COLOR } from '../../../../lib/constants';
 
 const styles = () => ({
@@ -9,6 +10,12 @@ const styles = () => ({
     height: "100%",
     backgroundColor: MAIN_COLOR,
     padding: '6rem',
+    [breakpoints.down('lg')]: {
+      padding: '3rem',
+    },
+    [breakpoints.down('exs')]: {
+      padding: ' 2rem 1.5rem'
+    }
   },
   bannerName: {
     fontWeight: 700,
@@ -17,15 +24,31 @@ const styles = () => ({
     color: 'white',
     lineHeight: '45px',
     marginBottom: '2rem',
+    [breakpoints.down('sm')]: {
+      fontSize: '1.5rem',
+    }
   },
   form: {
     display: 'flex',
+    [breakpoints.down('1000')]: {
+      flexDirection: 'column',
+    }
   },
   leftPart: {
     flex: 1,
     marginRight: '10rem',
     '& > :not(:last-child)': {
       marginBottom: '1.875rem',
+    },
+    [breakpoints.down('lg')]: {
+      marginRight: '4rem',
+    },
+    [breakpoints.down('1000')]: {
+      marginRight: 0,
+      '& > :not(:last-child)': {
+        marginBottom: '1rem',
+      },
+      marginBottom: '1rem'
     }
   },
   rightPart: {
@@ -63,12 +86,20 @@ const styles = () => ({
   rowWithCheckbox: {
     display: 'flex',
     alignItems: 'center',
+    [breakpoints.down('exs')]: {
+      flexDirection: 'column',
+      alignItems: 'stretch',
+    }
   },
   checkboxBlock: {
     display: 'flex',
     alignItems: 'center',
     marginLeft: '1rem',
     marginTop: '28px',
+    [breakpoints.down('exs')]: {
+      marginLeft: '-12px',
+      marginTop: '1rem',
+    }
   },
   checkbox: {
     color: '#232323 !important'
@@ -83,11 +114,17 @@ const styles = () => ({
     '&:focus': {
       borderColor: '#666666',
       outline: 'none',
+    },
+    [breakpoints.down('1000')]: {
+      marginBottom: '1rem',
     }
   },
   submitButton: {
     marginLeft: 'auto',
     marginTop: 'auto',
+    [breakpoints.down('1000')]: {
+      marginTop: '2rem',
+    }
   }
 });
 

@@ -10,11 +10,11 @@ const useStyles = createUseStyles(styles);
 const Header = ({ isFooter }) => {
   const classes = useStyles();
 
-  const navTitles = [
-    'проекты',
-    'подать заявку',
-    'о нас',
-  ]
+  // const navTitles = [
+  //   'проекты',
+  //   'подать заявку',
+  //   'о нас',
+  // ]
 
   return (
     <header className={cn(classes.container, {[classes.greyBg]: isFooter })}>
@@ -27,13 +27,13 @@ const Header = ({ isFooter }) => {
         </div>
       </div>
       <nav className={classes.nav}>
-        <ul className={classes.navList}>
+        {/* <ul className={classes.navList}>
           {navTitles.map((item, index) => (
             <li className={classes.navItem} key={index}>
               {item}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </nav>
     </header>
   )

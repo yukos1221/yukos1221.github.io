@@ -1,3 +1,4 @@
+import breakpoints from '../../../../../../lib/breakpoints';
 import { MAIN_COLOR } from '../../../../../../lib/constants';
 
 const styles = () => ({
@@ -9,6 +10,9 @@ const styles = () => ({
     flexDirection: 'column',
     margin: '0 0.75rem',
     marginBottom: '2.5rem',
+    [breakpoints.down('sm')]: {
+      width: "calc(((100vw - 12rem) / 2) - 1.5rem)",
+    }
   },
   photoBlock: {
     width: 'fit-content',
