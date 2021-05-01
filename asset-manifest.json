@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.48acb48f.chunk.js",
-    "main.js.map": "/static/js/main.48acb48f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.612763e3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.612763e3.js.map",
-    "static/js/2.46f695b1.chunk.js": "/static/js/2.46f695b1.chunk.js",
-    "static/js/2.46f695b1.chunk.js.map": "/static/js/2.46f695b1.chunk.js.map",
+    "main.js": "/static/js/main.6332cc99.chunk.js",
+    "main.js.map": "/static/js/main.6332cc99.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.99bb51c1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.99bb51c1.js.map",
+    "static/js/2.507efafa.chunk.js": "/static/js/2.507efafa.chunk.js",
+    "static/js/2.507efafa.chunk.js.map": "/static/js/2.507efafa.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.46f695b1.chunk.js.LICENSE.txt": "/static/js/2.46f695b1.chunk.js.LICENSE.txt",
+    "static/js/2.507efafa.chunk.js.LICENSE.txt": "/static/js/2.507efafa.chunk.js.LICENSE.txt",
     "static/media/Bold.1f0e4cc1.ttf": "/static/media/Bold.1f0e4cc1.ttf",
     "static/media/Bold.2b95a14c.woff": "/static/media/Bold.2b95a14c.woff",
     "static/media/Bold.64fc0b42.woff2": "/static/media/Bold.64fc0b42.woff2",
@@ -23,17 +23,15 @@
     "static/media/Regular.00c73d3e.woff2": "/static/media/Regular.00c73d3e.woff2",
     "static/media/Regular.00d8c03c.woff": "/static/media/Regular.00d8c03c.woff",
     "static/media/Regular.f489d769.ttf": "/static/media/Regular.f489d769.ttf",
-    "static/media/date.b191d366.svg": "/static/media/date.b191d366.svg",
     "static/media/geometricsansserifv1.1aa7d6ee.woff": "/static/media/geometricsansserifv1.1aa7d6ee.woff",
     "static/media/geometricsansserifv1.5b7c46ef.ttf": "/static/media/geometricsansserifv1.5b7c46ef.ttf",
     "static/media/geometricsansserifv1.a5f5df88.woff2": "/static/media/geometricsansserifv1.a5f5df88.woff2",
     "static/media/main_banner.70a38a19.png": "/static/media/main_banner.70a38a19.png",
-    "static/media/trump.a2833c4e.png": "/static/media/trump.a2833c4e.png",
     "static/media/trustee_default.d453c94f.png": "/static/media/trustee_default.d453c94f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.612763e3.js",
-    "static/js/2.46f695b1.chunk.js",
-    "static/js/main.48acb48f.chunk.js"
+    "static/js/runtime-main.99bb51c1.js",
+    "static/js/2.507efafa.chunk.js",
+    "static/js/main.6332cc99.chunk.js"
   ]
 }
