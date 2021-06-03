@@ -23,7 +23,11 @@ const styles = () => ({
     fontWeight: 700,
     fontSize: '2.25rem',
     textTransform: 'uppercase',
-    lineHeight: '45px'
+    lineHeight: '45px',
+    [breakpoints.down('sm')]: {
+      fontSize: '1.5rem',
+      lineHeight: '2rem',
+    }
   },
   cardsContainer: {
     display: 'flex',

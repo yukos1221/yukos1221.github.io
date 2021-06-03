@@ -32,7 +32,7 @@ const FormBanner = () => {
     <div className={classes.container}>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert elevation={6} variant="filled" onClose={handleClose} severity="success">
-          Заявка успиешно отправлена!
+          Заявка успешно отправлена!
         </Alert>
       </Snackbar>
       <h3 className={classes.bannerName}>
@@ -42,16 +42,16 @@ const FormBanner = () => {
         <div className={classes.leftPart}>
           <div className={classes.inputBlock}>
             <label className={classes.labelStrong} htmlFor="projectName">название вашего проекта</label>
-            <input className={classes.input} name="projectName" id="projectName" />
+            <input className={classes.input} name="projectName" id="projectName" required />
           </div>
           <div className={classes.inputBlock}>
             <label className={classes.label} htmlFor="link">ссылки на ресурсы проекта (сайт, соцсети)</label>
-            <input className={classes.input} name="link" id="link" />
+            <input className={classes.input} name="link" id="link" required />
           </div>
           <div className={classes.rowWithCheckbox}>
             <div className={classes.inputBlock} style={{flex: 1}}>
               <label className={classes.label} htmlFor="name">ваше имя</label>
-              <input className={classes.input} name="name" id="name" />
+              <input className={classes.input} name="name" id="name" required />
             </div>
             <div className={classes.checkboxBlock}>
               <Checkbox
@@ -67,25 +67,25 @@ const FormBanner = () => {
           </div>
           <div className={classes.inputBlock}>
             <label className={classes.label} htmlFor="telegram">ваш телеграм</label>
-            <input className={classes.input} name="telegram" id="telegram" />
+            <input className={classes.input} name="telegram" id="telegram" required />
           </div>
           <div className={classes.inputBlock}>
             <label className={classes.label} htmlFor="email">ваш email</label>
-            <input className={classes.input} name="email" id="email" type="email" />
+            <input className={classes.input} name="email" id="email" type="email" required />
           </div>
           <div className={classes.inputBlock}>
             <label className={classes.label} htmlFor="city">ваш город</label>
-            <input className={classes.input} name="city" id="city" />
+            <input className={classes.input} name="city" id="city" required />
           </div>
         </div>
         <div className={classes.rightPart}>
           <div className={classes.inputBlock}>
             <label className={classes.label} htmlFor="projectDescription">описание проекта  //  дата, идея, число участников</label>
-            <textarea className={classes.textArea} name="projectDescription" id="projectDescription" />
+            <textarea className={classes.textArea} name="projectDescription" id="projectDescription" required />
           </div>
           <div className={classes.inputBlock}>
             <label className={classes.label} htmlFor="helpDescription">описание необходимой помощи</label>
-            <textarea className={classes.textArea} name="helpDescription" id="helpDescription" />
+            <textarea className={classes.textArea} name="helpDescription" id="helpDescription" required />
           </div>
           <Button className={classes.submitButton}>
             Отправить заявку
