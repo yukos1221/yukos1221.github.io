@@ -10,9 +10,18 @@ const styles = () => ({
     flexDirection: 'column',
     margin: '0 0.75rem',
     marginBottom: '2.5rem',
-    [breakpoints.down('sm')]: {
-      width: "calc(((100vw - 12rem) / 2) - 1.5rem)",
-    }
+    [breakpoints.down('800')]: {
+      minWidth: 'auto',
+      marginBottom: '8rem',
+      width: "calc(((100vw - 6rem) / 2) - 1.5rem)",
+      height: "calc(((100vw - 6rem) / 2) - 1.5rem)",
+    },
+    [breakpoints.down('600')]: {
+      minWidth: '280px',
+      marginBottom: '4rem',
+      width: "calc(((100vw - 6rem) / 2) - 1.5rem)",
+      height: "100%",
+    },
   },
   photoBlock: {
     width: 'fit-content',
@@ -21,6 +30,7 @@ const styles = () => ({
   },
   photo: {
     objectFit: 'cover',
+    width: '100%',
     transform: 'translate(-15px, -15px)',
   },
   name: {

@@ -8,13 +8,23 @@ const useStyles = createUseStyles(styles);
 
 const trusteeData = [
   {
-    name: 'сергей кукожский',
-    description: 'программист, писатель, бомж',
+    name: 'марина мацапулина',
+    description: 'Председатель ЛПО',
     image: trusteeDefault,
   },
   {
-    name: 'сергей кукожский',
-    description: 'программист, писатель, бомж',
+    name: 'дмитрий максимов',
+    description: 'Учредитель ЛПО',
+    image: trusteeDefault,
+  },
+  {
+    name: 'дмитрий петров',
+    description: '???',
+    image: trusteeDefault,
+  },
+  {
+    name: 'ярослав слепухин',
+    description: 'Программист, член ЛПР',
     image: trusteeDefault,
   },
 ]

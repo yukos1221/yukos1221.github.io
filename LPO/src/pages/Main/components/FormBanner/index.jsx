@@ -38,7 +38,7 @@ const FormBanner = () => {
       <h3 className={classes.bannerName}>
         Подать заявку
       </h3>
-      <form ref={setFormRef} className={classes.form} onSubmit={onSubmit}>
+      <form ref={setFormRef} className={classes.form} onSubmit={onSubmit} action="https://formspree.io/f/xleabaqb" method="POST">
         <div className={classes.leftPart}>
           <div className={classes.inputBlock}>
             <label className={classes.labelStrong} htmlFor="projectName">название вашего проекта</label>

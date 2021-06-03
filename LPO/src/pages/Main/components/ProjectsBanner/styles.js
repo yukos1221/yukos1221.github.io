@@ -1,3 +1,5 @@
+import breakpoints from '../../../../lib/breakpoints';
+
 const styles = () => ({
   container: {
     display: 'flex',
@@ -6,6 +8,9 @@ const styles = () => ({
     height: "100%",
     backgroundColor: 'white',
     padding: '6rem',
+    [breakpoints.down('lg')]: {
+      padding: '2rem',
+    }
   },
   swiperContainer: {
     width: '100%',

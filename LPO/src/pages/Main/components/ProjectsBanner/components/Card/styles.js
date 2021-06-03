@@ -31,6 +31,7 @@ const styles = () => ({
     color: 'white',
     fontSize: '0.875rem',
     marginBottom: '1.5rem',
+    whiteSpace: 'pre-line',
   },
   bottomRow: {
     display: 'flex',
