@@ -9,10 +9,7 @@ import Card from './components/Card'
 
 const useStyles = createUseStyles(styles);
 
-const ProjectsBanner = () => {
-  const classes = useStyles();
-
-  const projects = [{
+const projects = [{
     title: 'Лекция Андрея Шальнева и Ивана Чинарова в Воронеже',
     description: 'На мероприятии разобрали вопросы, посвященные подготовке и проведению региональной предвыборной кампании, перспективы участия в региональных выборах оппозиционных кандидатов, а также мы обсудили проблемы современной репрессивной наркополитики и возможные пути их решения.',
     date: '14.12.2019',
@@ -36,16 +33,23 @@ const ProjectsBanner = () => {
   },
 ]
 
+const ProjectsBanner = () => {
+  const classes = useStyles();
+
   const swiperProps = {
     containerClass: classes.swiperContainer,
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 20,
+    rebuildOnUpdate: true,
     breakpoints: {
       1000: {
         slicedPerView: 3,
       },
       650: {
         slidesPerView: 2,
+      },
+      10: {
+        slidesPerView: 1,
       }
     }
   }
@@ -56,7 +60,7 @@ const ProjectsBanner = () => {
         Реализованные проекты
       </h3>
       <div className={classes.cardsContainer}>
-        <Swiper {...swiperProps}>
+        <Swiper {...swiperProps} >
           {projects.map((project, index) => (
             <div key={index}>
               <Card item={project} />
