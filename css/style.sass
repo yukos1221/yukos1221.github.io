@@ -1,0 +1,589 @@
+$maincolor: #00897b
+$black: #212121
+$grey: #3f3f3f
+$blue: #3949ab
+$sea: #e4fdf9
+$red: #941f16
+
+html 
+    scroll-behavior: smooth
+    font-size: 20px
+
+*
+    box-sizing: border-box
+
+body
+    color: #212121
+    .defpage
+        padding-top: 120px
+        padding-bottom: 100px
+
+a
+
+#memberpage
+    padding-bottom: 200px
+#contact-us-section
+    background: url(../img/bg-lastpage.png)  no-repeat center center / cover
+
+.roboto
+    font-family: 'Roboto', sans-serif
+
+.pagetitle
+    font-size: 30px
+    font-weight: 700
+    text-align: center
+
+.pagetext
+    margin: 20px auto 70px auto
+    max-width: 650px
+    font-size: 15px
+    text-align: center
+    color: #3f3f3f
+
+.socbutton
+    color: $maincolor
+    background-color: #e7e7e7
+    border-radius: 10px
+    margin-left: 12px
+    border: none
+    font-size: 28px
+    width: 50px
+    height: 50px
+    &:hover
+        color: #ffffff
+    &:focus
+        outline: none
+
+.fb:hover
+    background-color: $blue
+
+.twitter:hover
+    background-color: rgb(28, 157, 235)
+
+.cloud:hover
+    background-color: #851d41
+
+.ball:hover
+    background-color: #000
+
+.button
+    font-weight: 600
+    padding: 13px 0
+    text-transform: uppercase
+    color: #fff
+    &:focus
+        outline: none
+
+.button-trans
+    border: 3px solid #ffffff
+    background-color: rgba(1,1,1,0)
+
+.button-green
+    border: 3px solid $maincolor
+    background-color: $maincolor
+
+.navline
+    margin: 10px 0
+    &-logo
+        height: 100px
+        width: auto
+        display: inline-block
+    &-ul
+        padding: 0 50px
+        font-weight: 600
+        margin-top: 40px
+        float: right
+        display: block
+        .frrow
+            display: inline-block
+        li
+            margin-left: 35px
+            display: inline
+            a
+                color: $black
+                text-decoration: none
+
+.firstpage
+    padding-bottom: 100px
+    padding-top: 220px
+    background: url(../img/backgroundfirst.png) no-repeat center center / cover
+    color: #ffffff
+    h1
+        font-weight: 600
+        font-size: 60px
+        text-align: center
+        margin: 0 auto
+    &-text
+        padding-top: 25px
+        font-size: 22px
+        text-align: center
+        margin: 0 auto
+    .buttons
+        margin-top: 110px
+        text-align: center
+        font-weight: 700
+        .button-trans
+            width: 220px
+        .button-green
+            width: 220px
+            margin-left: 25px
+    .chevrondown
+        margin-top: 95px
+        font-size: 25px
+        text-align: center
+        a
+            color: #fff
+
+.about-us
+    &-card
+        margin: 0 auto
+        max-width: 300px
+        min-height: 300px
+        color: $grey
+        .imgdiv
+            width: 60px
+            height: 60px
+            margin: 35px auto 25px auto
+        &-title
+            text-align: center
+            font-weight: 600
+            margin-top: 35px
+        &-text
+            font-size: 15px
+            text-align: center
+
+.bluesec
+    background-color: $sea
+    .our-services-card
+        margin-top: 30px
+        transition: 0.5s
+        background-color: #fff
+        padding: 50px 30px 40px 30px
+        &-img
+            font-size: 70px
+            text-align: center
+        &-title
+            margin-top: 15px
+            font-weight: 600
+            text-align: center
+        &-text
+            min-height: 170px
+            font-size: 16px
+            text-align: center
+        &-button
+            display: block
+            color: $black
+            transition: 0.5s
+            border: 2px solid $black
+            background-color: rgba(1,1,1,0)
+            width: 150px
+            margin: 30px auto 0 auto
+            &:hover
+                color: $black !important
+                background-color: #fff
+                border-color: $black !important
+
+        &:hover
+            background-color: $maincolor
+            color: #ffffff
+            box-shadow: 0 10px 20px 0px rgba(0,0,0, 0.4)
+            .button
+                color: #fff
+                border-color: #fff
+
+.latest-works
+    .buttons
+        text-align: center
+        .buttons-group
+            display: inline-block
+    .activebut
+        background-color: $maincolor
+        color: #fff
+    &-button
+        margin: 0 15px 30px 0
+        padding: 12px 20px
+        color: $black
+        border: 2px solid $maincolor
+        background-color: #fff
+        transition: 0.5s
+        &:hover
+            background-color: $maincolor
+            color: #fff
+    &-img
+        padding-top: 35px
+        width: 100%
+        img
+            cursor: default
+            width:  100%
+
+.our-team
+    .member-card
+        padding 200px
+        .member-img
+            img
+                display: block
+                margin: 0 auto
+                max-width: 320px
+                max-height: 280px
+                border-radius: 10px
+        &-title
+            margin-top: 15px
+            letter-spacing: 1px
+            font-weight: 600
+            text-align: center
+        &-position
+            font-size: 15px
+            text-align: center
+        &-buttons
+            text-align: center
+            &-group
+                margin-top: 20px
+                display: inline-block
+        &:focus
+            outline: none
+
+.slick-dots li button:before 
+    font-family: 'slick'
+    font-size: 15px
+    line-height: 20px
+    padding-top: 90px
+    width: 20px
+    height: 20px
+    content: '•'
+    text-align: center
+    opacity: .8
+    color: $maincolor
+
+.slick-dots li.slick-active button:before
+    color: $blue
+
+
+.blog
+    &-img
+        img
+            width: 100%
+            padding: 0 2px
+    &-card
+        padding-top: 30px
+        padding-right: 100px
+        &-title
+            a
+                font-size: 25px
+                font-weight: 600
+                color: $black
+                text-decoration: none
+                &:hover
+                    color: $maincolor
+        &-ddcontainer
+            margin: 15px 0
+            &-item
+                display: inline-block
+                margin-right: 30px
+                font-size: 17px
+                font-weight: 600
+            .far
+                margin-right: 4px
+        &-text
+            font-size: 15px
+
+.contact-us
+    color: #fff
+    padding-bottom: 70px
+    .pagetext
+        color: #ffffff
+    &-el
+        margin-top: 40px
+        &-icon
+            display: block
+            margin: 0 auto
+            width: 90px
+            height: 90px
+            background-color: $blue
+            border-radius: 100%
+            position: relative
+            i
+                font-size: 40px
+                position: absolute
+                top: 50%
+                left: 50%
+                margin-right: -50%
+                transform: translate(-50%, -50%)
+        &-text
+            font-weight: 600
+            margin-top: 20px
+            text-align: center
+            a
+                color: #fff
+                text-decoration: none
+                &:hover
+                    color: darken(#fff, 25%)
+    &-form
+        padding: 70px 100px 0 100px
+        .forminput
+            margin-top: 20px
+            font-weight: 600
+            padding: 20px 20px
+            width: 100%
+            border: none
+            border-radius: 7px
+            &:focus
+                outline: none
+        &-textarea
+            margin-top: 22px
+        .submit
+            font-weight: 700
+            margin-top: 15px
+            float: right
+            padding: 16px 60px
+            text-transform: uppercase
+            border: none
+            border-radius: 7px
+            &:focus
+                outline: none
+
+.endline
+    margin: 15px 0
+    font-weight: 700
+    background-color: #fff
+    text-align: center
+
+.servicing-modal
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #00000050
+    text-align: center
+    z-index: 130
+    &-body
+        position: relative
+        margin: auto
+        max-width: 600px
+        width: 70vw
+        min-height: 200px
+        max-height: 80vh
+        background-color: #fff
+        padding: 30px 30px 50px 30px
+        overflow: auto
+        border-radius: 5px
+        &-img
+            font-size: 80px
+        h2
+            margin: 10px
+            font-size: 40px
+        &-text
+            margin-top: 20px
+            text-indent: 40px
+        .exitbtn
+            position: absolute
+            display: flex
+            right: 5px
+            top: 5px
+            width: 50px
+            height: 50px
+            font-size: 40px
+            border: none
+            background-color: #fff
+            &:focus
+                outline: none
+            &:hover
+                color: $red
+            .far
+                display: block
+                margin: auto
+
+.formsendedmsg
+    width: 420px
+    background-color: #fff
+    border: 2px solid $black
+    border-radius: 20px
+    display: none
+    position: fixed
+    top: 50px
+    left: 50%
+    z-index: 50
+    transform: translate(-50%,0)
+    padding: 20px 30px
+    text-align: center
+    &-text
+        span
+            margin: 0px 7px
+        .fas
+            font-size: 25px
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px)
+    .navline .navline-ul li
+        margin-left: 20px
+    .our-team .member-card .member-img img
+        max-width: 240px
+
+@media screen and (max-width: 991px)
+    .contact-us-form
+        padding: 70px 20px 0 20px
+    .our-team .member-card-buttons-group
+        display: block
+    .navline-logo
+        display: block
+        margin: 0 auto
+    .navline .navline-ul
+        float: none
+        text-align: center
+        .frrow
+            display: block
+        margin-top: 20px
+        li
+            margin-left: 50px
+            #contact-us-link
+                white-space: nowrap
+    .our-team .member-card .member-img img
+        max-width: 220px
+    .cards
+        display: flex
+        flex-flow: wrap
+        .blog-card
+            padding-top: 10px
+            padding-left: 20px
+            margin-bottom: 80px
+        .col1, .col2, .col3, .col4, .col5, .col6
+            width: 100%
+        .col1
+            order: 1
+        .col2
+            order: 2
+        .col3
+            order: 4
+        .col4
+            order: 3
+        .col5
+            order: 5
+        .col6
+            order: 6
+
+@media screen and (max-width: 767px)
+    .latest-works .buttons .buttons-group
+        display: block
+    .navline .navline-ul li
+        margin-left: 0px
+
+@media screen and (max-width: 576px)
+    .formsendedmsg
+        width: 170px
+    .servicing-modal-body
+        padding: 30px 15px 30px 15px
+    .prev-arrow 
+        left: 30px !important
+    .next-arrow 
+        right: 30px !important
+    .contact-us-form .submit
+        float: none
+        display: block
+        margin: 15px auto 0px auto
+    .firstpage h1
+        font-size: 40px
+    .firstpage .buttons .button-green
+        display: block
+        margin: 20px auto
+    .navline .navline-ul
+        margin-top: 40px
+        display: block
+        margin: 0 auto 20px auto
+        li
+            display: block
+            text-align: center
+            margin-top: 10px
+
+.dws
+    width: 100%
+    height: auto
+ 
+.blocImg
+    overflow: hidden 
+    background: #000 
+    cursor: pointer
+ 
+.blocImg img  
+    width: 100% 
+    transition: .5s 
+ 
+.dws:hover .blocImg img  
+    transform: rotate(-10deg) scale(1.3) 
+    filter: blur(1px) 
+    opacity: .5 
+ 
+.blocText
+    cursor: default
+    position: absolute
+    top: 65px 
+    left: 30px 
+    right: 30px 
+    bottom: 30px 
+ 
+.text
+    color: #fff
+    padding: 0px 20px 
+    opacity: 0 
+    transition: .5s
+    text-align: center
+    font-size: 25px
+    h2
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+ 
+.dws:hover .text  
+    opacity: 1 
+ 
+.blocText::before,
+.blocText::after  
+    content: '' 
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100% 
+    height: 100% 
+    transition: .5s 
+ 
+.blocText::before  
+    border-top: 1px solid #fff 
+    border-bottom: 1px solid #fff 
+    transform: scale(0,1) 
+ 
+.blocText::after  
+    border-left: 1px solid #fff 
+    border-right: 1px solid #fff 
+    transform: scale(1,0) 
+ 
+.dws:hover .blocText::before,
+.dws:hover .blocText::after 
+    transform: scale(1,1) 
+
+.arrow 
+  position: absolute
+  top: 50%
+  width: 2rem
+  height: 2rem
+  border: none
+  z-index: 99
+
+.arrow:focus 
+  outline: none
+
+.prev-arrow 
+  left: -38px
+  background: url(../img/button-left.png) center no-repeat
+  background-size: 90%
+
+.next-arrow 
+  right: -38px
+  background: url(../img/button-rigth.png) center no-repeat
+  background-size: 90%

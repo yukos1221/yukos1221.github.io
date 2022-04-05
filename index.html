@@ -1,1 +1,619 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><title>React App</title></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,i=r[0],a=r[1],p=r[2],c=0,s=[];c<i.length;c++)l=i[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(e[n]=a[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var a=t[i];0!==o[a]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var i=this.webpackJsonpboilerplate=this.webpackJsonpboilerplate||[],a=i.push.bind(i);i.push=r,i=i.slice();for(var p=0;p<i.length;p++)r(i[p]);var f=a;t()}([])</script><script src="/static/js/2.9d40ae04.chunk.js"></script><script src="/static/js/main.f41d26cc.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/css/solid.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.12.0-web/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>WDP</title>
+</head>
+<body>
+    <div class="formsendedmsg">
+        <div class="formsendedmsg-text">
+            <i class="fas fa-dove"></i> 
+            <span> Your application has been sent!</span> 
+            <i class="fas fa-dove"></i>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="navline">
+                <div class="row">
+                    <div class="col-12 col-lg-2">
+                        <img class="navline-logo" src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="col-12 col-lg-10">
+                        <ul class="navline-ul ">
+                            <span class="frrow">
+                                <li><a class="about-us-link" href="#about-us-section">About</a></li>
+                                <li><a class="servicing-link" href="#servicing-section">Servicing</a></li>
+                                <li><a class="portfolio-link" href="#portfolio-section">Portfolio</a></li>
+                            </span>
+                            <li><a class="blog-link" href="#blog-section">Blog</a></li>
+                            <li><a class="contact-us-link" href="#contact-us-section">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="firstpage">
+            <h1>
+                Web development project
+            </h1>
+            <div class="firstpage-text">
+                Very suitable to support all web development project
+            </div>
+            <div class="buttons">
+                <button class="button button-trans roboto servicing-link">Our services</button>
+                <button class="button button-green roboto contact-us-link">Hire now</button>
+            </div>
+            <div class="chevrondown">
+                <a class="about-us-link" href="#about-us-section"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us-section" class="defpage">
+        <div class="container">
+            <div class="about-us">
+                <h2 class="pagetitle">
+                    About us
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nobis neque incidunt necessitatibus harum sequi porro repellat beatae amet quo quis aperiam veritatis sit assumenda commodi modi, deserunt laborum illum!
+                </div>
+
+                <div class="row">
+                    <div class="col-8 offset-2 col-sm-6 offset-sm-0 col-md-4">
+                        <div class="about-us-card">
+                            <div class="imgdiv">
+                                <img src="img/internet.png" alt="internet">
+                            </div>
+                            <p class="about-us-card-title">Awesome Icons</p>
+                            <p class="about-us-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa doloribus animi, necessitatibus nostrum aut. Perferendis quos magnam sunt dolorum nam suscipit optio repellat. Optio iure beatae doloremque nulla laborum?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-us-card">
+                            <div class="imgdiv">
+                                <img src="img/transfer.png" alt="transfer">
+                            </div>
+                            <p class="about-us-card-title">One Page</p>
+                            <p class="about-us-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad quod, laboriosam unde, quisquam ea illo animi nostrum, assumenda debitis pariatur cupiditate enim dignissimos. Odit ducimus quae minima laudantium quam?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-us-card">
+                            <div class="imgdiv">
+                                <img src="img/head.png" alt="head">
+                            </div>
+                            <p class="about-us-card-title">Fully Responsive</p>
+                            <p class="about-us-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam tempore saepe quos dolores adipisci eum dolor numquam dolorem labore accusamus corrupti, sed laborum cupiditate. Exercitationem illum minima ipsa repudiandae!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicing-section" class="defpage bluesec">
+        <div class="container">
+            <div class="our-services">
+                <h2 class="pagetitle">
+                    Our Services
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nobis neque incidunt necessitatibus harum sequi porro repellat beatae amet quo quis aperiam veritatis sit assumenda commodi modi, deserunt laborum illum!
+                </div>
+                <div class="our-services-cards">
+                    <div class="row">
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
+                            <div class="our-services-card">
+                                <div class="our-services-card-img">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="our-services-card-title">
+                                    <p>Research</p>
+                                </div>
+                                <div class="our-services-card-text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati molestiae ex dolores quo dolorem, quas nisi, cum, ipsa adipisci qui quisquam? Libero eum aut nostrum placeat suscipit debitis odio itaque?</p>
+                                </div>
+                                <button name="btn1" class="our-services-card-button button ourservbtn">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
+                            <div class="our-services-card">
+                                <div class="our-services-card-img">
+                                    <i class="fas fa-folder-open"></i>
+                                </div>
+                                <div class="our-services-card-title">
+                                    <p>Portfolio</p>
+                                </div>
+                                <div class="our-services-card-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta tempore eveniet, fuga similique totam placeat delectus nemo maiores ut repudiandae odio deserunt optio nulla ipsum possimus veritatis tempora blanditiis nobis.</p>
+                                </div>
+                                <button name="btn2" class="our-services-card-button button ourservbtn">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
+                            <div class="our-services-card">
+                                <div class="our-services-card-img">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="our-services-card-title">
+                                    <p>Support</p>
+                                </div>
+                                <div class="our-services-card-text">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta dolorum eum cumque facilis fugiat repellendus? Fugiat odit iusto at consectetur, nisi distinctio odio quos. Culpa possimus ducimus voluptate iste.</p>
+                                </div>
+                                <button name="btn3" class="our-services-card-button button ourservbtn">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
+                            <div class="our-services-card">
+                                <div class="our-services-card-img">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="our-services-card-title">
+                                    <p>Documentation</p>
+                                </div>
+                                <div class="our-services-card-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem tenetur modi animi! Aspernatur harum nesciunt expedita unde adipisci doloremque eaque, eius asperiores perferendis voluptates consequatur debitis eveniet numquam suscipit.</p>
+                                </div>
+                                <button name="btn4" class="our-services-card-button button ourservbtn">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
+                            <div class="our-services-card">
+                                <div class="our-services-card-img">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="our-services-card-title">
+                                    <p>Development</p>
+                                </div>
+                                <div class="our-services-card-text">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, iusto. Laborum eos quisquam eligendi, quam delectus unde omnis placeat ipsum magnam excepturi ipsam, nostrum alias quibusdam illum quos ullam accusamus?</p>
+                                </div>
+                                <button name="btn5" class="our-services-card-button button ourservbtn">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 offset-1 offset-sm-0">
+                            <div class="our-services-card">
+                                <div class="our-services-card-img">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div class="our-services-card-title">
+                                    <p>Design</p>
+                                </div>
+                                <div class="our-services-card-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, corrupti? Veniam voluptates totam veritatis nisi labore necessitatibus! Nemo, ea, autem fugiat maxime explicabo dolor, at name cupiditate nam incidunt quidem.</p>
+                                </div>
+                                <button name="btn6" class="our-services-card-button button ourservbtn">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio-section" class="defpage">
+        <div class="container">
+            <div class="latest-works">
+                <h2 class="pagetitle">
+                    Latest Works
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at repellat nulla. Aliquid, eligendi est? Vero, animi laborum in sunt quibusdam ipsa quasi excepturi molestiae aspernatur, laboriosam nesciunt incidunt ratione.
+                </div>
+                <div class="buttons">
+                    <div class="buttons-group">
+                        <button name="latwork-all" class="latworkbtn button latest-works-button activebut">All</button>
+                        <button name="latwork-web" class="latworkbtn button latest-works-button">Web Design</button>
+                    </div>
+                    <div class="buttons-group">
+                        <button name="latwork-ux" class="latworkbtn button latest-works-button">Ui/ux Design</button>
+                        <button name="latwork-mock" class="latworkbtn button latest-works-button">Mockups</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="all web mock col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                        <div class="latest-works-img">
+                            <div class="dws">
+                                <div class="blocImg">
+                                    <img src="img/wallet.jpg" alt="wallet">
+                                    <div class="blocText">
+                                        <div class="text">
+                                            <h2>Game Wallet</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="all web ux col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                        <div class="latest-works-img">
+                            <div class="dws">
+                                <div class="blocImg">
+                                    <img src="img/condom.png" alt="condom">
+                                    <div class="blocText">
+                                        <div class="text">
+                                            <h2>One Day <br> Pass</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="all ux col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                        <div class="latest-works-img">
+                            <div class="dws">
+                                <div class="blocImg">
+                                    <img src="img/pants.png" alt="pants">
+                                    <div class="blocText">
+                                        <div class="text">
+                                            <h2>Soft Pants</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="all web ux col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                        <div class="latest-works-img">
+                            <div class="dws">
+                                <div class="blocImg">
+                                    <img src="img/flask.png" alt="flask">
+                                    <div class="blocText">
+                                        <div class="text">
+                                            <h2>Bottomless <br> Flask</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="all mock col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                        <div class="latest-works-img">
+                            <div class="dws">
+                                <div class="blocImg">
+                                    <img src="img/bottle.png" alt="bottle">
+                                    <div class="blocText">
+                                        <div class="text">
+                                            <h2>Comfortable <br> Bottle</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="all web mock col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                        <div class="latest-works-img">
+                            <div class="dws">
+                                <div class="blocImg">
+                                    <img src="img/bagpack.png" alt="backpack">
+                                    <div class="blocText">
+                                        <div class="text">
+                                            <h2>Backpack full <br> of Pork</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="memberpage" class="defpage">
+        <div class="container">
+            <div class="our-team">
+                <h2 class="pagetitle">
+                    Our Team Member
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptates cupiditate veniam odit eveniet illo quam optio? Sequi quaerat libero, vero veniam exercitationem rem ex? Omnis tempore voluptatibus alias ipsa.
+                </div>
+                <div class="our-team-slider">
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/chechet.jpg" alt="Alexey Chechet"></div>
+                        <div class="member-card-title">Alexey Chechet</div>
+                        <div class="member-card-position">General Manager</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/babe.jpg" alt="Sofia Hartz"></div>
+                        <div class="member-card-title">Sofia Hartz</div>
+                        <div class="member-card-position">Graphic Designer</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/ivan.jpg" alt="Ivan Ermakov"></div>
+                        <div class="member-card-title">Ivan Ermakov</div>
+                        <div class="member-card-position">Product Manager</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/bubnov.jpg" alt="Ilya Vinnikov"></div>
+                        <div class="member-card-title">Ilya Vinnikov</div>
+                        <div class="member-card-position">Cook</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/max.jpg" alt="Maxim Kraevoy"></div>
+                        <div class="member-card-title">Maxim Kraevoy</div>
+                        <div class="member-card-position">Programmer</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img"><img src="img/sashin.jpg" alt="Yuri Volovinsky"></div>
+                        <div class="member-card-title">Yuri Volovinsky</div>
+                        <div class="member-card-position">Psychotherapist</div>
+                        <div class="member-card-buttons">
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton fb"><i class="fab fa-facebook-f"></i></button>
+                                <button class="socbutton twitter"><i class="fab fa-twitter"></i></button>
+                            </div>
+                            <div class="member-card-buttons-group">
+                                <button class="socbutton cloud"><i class="fas fa-kiwi-bird"></i></button>
+                                <button class="socbutton ball"><i class="fas fa-pastafarianism"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-section" class="defpage bluesec">
+        <div class="container">
+            <div class="blog">
+                <h2 class="pagetitle">
+                    Blog
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus esse voluptas perferendis dolorum delectus laudantium doloribus cumque libero soluta dicta tenetur sit et ipsa, qui earum perspiciatis ipsum error nobis.
+                </div>
+
+                <div class="cards">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col1">
+                            <div class="blog-img">
+                                <img src="img/seo.png" alt="SEO">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col2">
+                            <div class="blog-card">
+                                <h3 class="blog-card-title">
+                                    <a href="#">SEO Quis Vestibulum</a>
+                                </h3>
+                                <div class="blog-card-ddcontainer">
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-calendar-alt"></i> 29.11.2019
+                                    </div>
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-file"></i> Development
+                                    </div>
+                                </div>
+                                <div class="blog-card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quam vitae non corrupti nobis alias aperiam quas iste sit fuga earum et nesciunt ut, quaerat minus in! Voluptate, atque magni?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col3">
+                            <div class="blog-card">
+                                <h3 class="blog-card-title">
+                                    <a href="#">SEO Quis Vestibulum</a>
+                                </h3>
+                                <div class="blog-card-ddcontainer">
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-calendar-alt"></i> 14.10.2019
+                                    </div>
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-file"></i> Development
+                                    </div>
+                                </div>
+                                <div class="blog-card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a quis accusamus laborum debitis obcaecati consequatur aperiam cumque, blanditiis ipsum. Illo hic soluta dolor veritatis quam ullam atque et provident.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col4">
+                            <div class="blog-img">
+                                <img src="img/apple-desktop-1.png" alt="desktop">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col5">
+                            <div class="blog-img">
+                                <img src="img/apple-desktop-2.png" alt="desktop">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col6">
+                            <div class="blog-card">
+                                <h3 class="blog-card-title">
+                                    <a href="#">SEO Quis Vestibulum</a>
+                                </h3>
+                                <div class="blog-card-ddcontainer">
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-calendar-alt"></i> 19.08.2019
+                                    </div>
+                                    <div class="blog-card-ddcontainer-item">
+                                        <i class="far fa-file"></i> Development
+                                    </div>
+                                </div>
+                                <div class="blog-card-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium perspiciatis natus laudantium nulla enim nisi aliquam! Atque, odio cupiditate, impedit maxime ut doloribus quasi accusamus libero tempora quos exercitationem quas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us-section" class="defpage">
+        <div class="container">
+            <div class="contact-us">
+                <h2 class="pagetitle">
+                    Contact Us
+                </h2>
+                <div class="pagetext">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium esse dolores illo nihil voluptatibus, quaerat ullam fugiat eaque corrupti sunt excepturi suscipit sed unde quidem eos ad veniam dignissimos a.
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-us-el">
+                            <div class="contact-us-el-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-us-el-text">
+                                Ottawa, Ontario, <br> Canada
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-us-el">
+                            <div class="contact-us-el-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-us-el-text">
+                                <a href="tel:+78000000000">+8 721 575 95 31</a>  <br>
+                                <a href="tel:+78000000000">+8 921 835 18 23</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-us-el">
+                            <div class="contact-us-el-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="contact-us-el-text">
+                                <a href="mailto:quickworkwdp@gmail.com">quickworkwdp@gmail.com</a><br>
+                                <a href="mailto:quickworkwdp@yahoo.com">quickworkwdp@yahoo.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-us-form" action="#">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="contact-us-form-input forminput" type="text" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="contact-us-form-input forminput" type="text" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <textarea class="contact-us-form-textarea forminput" cols="30" rows="8"  placeholder="Write Message"></textarea>
+                    
+                    <button id="submitbutton" class="submit roboto">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <div class="endline roboto">
+            All rights Reserved © 2020
+        </div>
+    </div>
+
+    <div class="servicing-modal">
+        <div class="servicing-modal-body">
+            <div class="servicing-modal-body-img">
+                <i id="modal-img" class="fas"></i>
+            </div>
+            <h2 id="modal-title">
+                Portfolio
+            </h2>
+            <div class="servicing-modal-body-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rem eum itaque exercitationem quidem modi iste fugiat dolor deleniti eveniet, temporibus nostrum, quasi in ratione! Sit cumque sunt ab distinctio.
+                Pariatur illo incidunt officiis dignissimos, voluptatibus dicta voluptate unde sunt enim ab, ex exercitationem delectus doloremque, itaque nostrum accusantium blanditiis provident! Nostrum est eos cum quae quos at dolor omnis!
+                Obcaecati sit optio sapiente odit pariatur quibusdam commodi aut quidem, doloribus cumque vitae, non ut, voluptate dolor porro consectetur. Ipsam earum aspernatur voluptates! Neque quos eos iste suscipit maxime perferendis.
+            </div>
+            <button class="exitbtn"><i class="far fa-times-circle"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
